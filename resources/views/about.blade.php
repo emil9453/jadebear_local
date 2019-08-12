@@ -34,16 +34,16 @@
                             <a class="nav-link" href="#">О нас <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Наша команда</a>
+                            <a class="nav-link" href="{{ route('ourTeam') }}">Наша команда</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Наша история</a>
+                            <a class="nav-link" href="{{ route('ourHistory') }}">Наша история</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Вакансия</a>
+                            <a class="nav-link" href="{{ route('vacancy') }}">Вакансия</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Контакты и реквизиты</a>
+                            <a class="nav-link" href="{{ route('contactDetails') }}">Контакты и реквизиты</a>
                           </li>
                         </ul>
                         </div>
@@ -188,13 +188,13 @@
         <nav id="nav">
             <p class="nav-title">МЕНЮ</p>
             <ul class="main">
-                <li><a href="">О НАС</a></li>
-                <li><a href="">ПОРТФОЛИО</a></li>
-                <li><a href="">ОТЗЫВЫ</a></li>
-                <li><a href="">УСЛУГИ</a></li>
-                <li><a href="">ПАРТНЕРАМ</a></li>
-                <li><a href="">ИНВЕСТОРАМ</a></li>
-                <li><a href="">БЛОГ</a></li>
+                <li><a href="{{ route('about') }}">О НАС</a></li>
+                <li><a href="{{ route('portfolio') }}">ПОРТФОЛИО</a></li>
+                <li><a href="{{ route('reviews') }}">ОТЗЫВЫ</a></li>
+                <li><a href="{{ route('services') }}">УСЛУГИ</a></li>
+                <li><a href="{{ route('toPartners') }}">ПАРТНЕРАМ</a></li>
+                <li><a href="{{ route('toInvestors') }}">ИНВЕСТОРАМ</a></li>
+                <li><a href="{{ route('blog') }}">БЛОГ</a></li>
             </ul>
         </nav>
         <div class="overlay"></div>

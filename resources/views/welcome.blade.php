@@ -48,12 +48,12 @@
             <p class="nav-title">МЕНЮ</p>
             <ul class="main">
                 <li><a href="{{ route('about') }}">О НАС</a></li>
-                <li><a href="">ПОРТФОЛИО</a></li>
-                <li><a href="">ОТЗЫВЫ</a></li>
-                <li><a href="">УСЛУГИ</a></li>
-                <li><a href="">ПАРТНЕРАМ</a></li>
-                <li><a href="">ИНВЕСТОРАМ</a></li>
-                <li><a href="">БЛОГ</a></li>
+                <li><a href="{{ route('portfolio') }}">ПОРТФОЛИО</a></li>
+                <li><a href="{{ route('reviews') }}">ОТЗЫВЫ</a></li>
+                <li><a href="{{ route('services') }}">УСЛУГИ</a></li>
+                <li><a href="{{ route('toPartners') }}">ПАРТНЕРАМ</a></li>
+                <li><a href="{{ route('toInvestors') }}">ИНВЕСТОРАМ</a></li>
+                <li><a href="{{ route('blog') }}">БЛОГ</a></li>
             </ul>
         </nav>
         <div class="overlay"></div>        

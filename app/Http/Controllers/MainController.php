@@ -9,4 +9,34 @@ class MainController extends Controller
     public function about(){
         return view('about');
     }
+
+    public function portfolio(){
+        return view('temp');
+        //return view('portfolio');
+    }
+
+    public function reviews(){
+        return view('temp');
+        //return view('reviews');
+    }
+
+    public function services(){
+        return view('temp');
+        //return view('services');
+    }
+
+    public function toPartners(){
+        return view('temp');
+        //return view('toPartners');
+    }
+
+    public function toInvestors(){
+        return view('temp');
+        //return view('toInvestors');
+    }
+
+    public function blog(){
+        return view('temp');
+        //return view('blog');
+    }
 }
