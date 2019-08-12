@@ -9,6 +9,7 @@
 
 define('LARAVEL_START', microtime(true));
 
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
@@ -37,6 +38,7 @@ require __DIR__.'/../vendor/autoload.php';
 
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+
 /*
 |--------------------------------------------------------------------------
 | Run The Application
@@ -55,6 +57,6 @@ $response = $kernel->handle(
     $request = Illuminate\Http\Request::capture()
 );
 
-$response->send();
+$response->send();	
 
 $kernel->terminate($request, $response);

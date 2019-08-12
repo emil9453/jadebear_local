@@ -10,3 +10,5 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+/database/migrations/2019_08_11_210200_create_task_table.php
+.htaccess
