@@ -15,3 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/about', 'MainController@about')->name('about');
+Route::get('/our-team', 'MainController@our_team')->name('our_team');
+Route::get('/our-history', 'MainController@our_history')->name('our_history');
