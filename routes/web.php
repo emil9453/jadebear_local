@@ -17,3 +17,19 @@ Route::get('/', function () {
 Route::get('/about', 'MainController@about')->name('about');
 Route::get('/our-team', 'MainController@our_team')->name('our_team');
 Route::get('/our-history', 'MainController@our_history')->name('our_history');
+Route::get('/vacancy', 'MainController@vacancy')->name('vacancy');
+Route::get('/vacancy/career', function () {
+    return view('vacancy.career');
+});
+Route::get('/vacancy/semantics', function () {
+    return view('vacancy.semantic');
+});
+Route::get('/vacancy/scheme', function () {
+    return view('vacancy.scheme');
+});
+Route::get('/contacts', function () {
+    return view('contacts');
+});
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});

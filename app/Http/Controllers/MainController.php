@@ -15,4 +15,8 @@ class MainController extends Controller
     public function our_history(){
         return view('our_history');
     }
+    public function vacancy(){
+        return view('vacancy.vacancy');
+    }
+    
 }

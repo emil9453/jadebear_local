@@ -16,7 +16,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav cap16">
               <li class="nav-item">
-                <a class="nav-link" href="#">О нас </a>
+                <a class="nav-link" href="{{ route('about') }}">О нас </a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Наша команда <span class="sr-only">(current)</span></a>
@@ -25,10 +25,10 @@
                 <a class="nav-link" href="#">Наша история</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Вакансия</a>
+                <a class="nav-link" href="{{ route('vacancy') }}">Вакансия</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакты и реквизиты</a>
+                <a class="nav-link" href="{{ route('contacts') }}">Контакты и реквизиты</a>
               </li>
             </ul>
             </div>

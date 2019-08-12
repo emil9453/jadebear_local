@@ -26,7 +26,7 @@
             <p class="nav-title">МЕНЮ</p>
             <ul class="main">
                 <li><a href="{{ route('about') }}">О НАС</a></li>
-                <li><a href="{{ route('our_team') }}">ПОРТФОЛИО</a></li>
+                <li><a href="">ПОРТФОЛИО</a></li>
                 <li><a href="">ОТЗЫВЫ</a></li>
                 <li><a href="">УСЛУГИ</a></li>
                 <li><a href="">ПАРТНЕРАМ</a></li>
@@ -43,5 +43,9 @@
 $('.menu, .overlay').click(function () {
     $('.menu').toggleClass('clicked');
     $('#nav').toggleClass('show');
+});
+$('#btn-vacancy-responce').click(function () {
+    $('.popup').toggleClass('clicked');
+    $('#vacancy-nav').toggleClass('show');
 });
 </script>
