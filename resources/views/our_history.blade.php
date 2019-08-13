@@ -18,11 +18,11 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('about') }}">О нас </a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Наша команда <span class="sr-only">(current)</span></a>
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Наша история</a>
+                <a class="nav-link" href="{{ route('our_team') }}">Наша команда </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Наша история <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{ route('vacancy') }}">Вакансия</a>

@@ -6,7 +6,7 @@
 <div class="row pt-5">
     <div class="col-md-1"></div>
     <div class="col-md-4 page-title">
-        <h2 class="text-uppercase" >Наша история</h2>
+        <h2 class="text-uppercase" >Вакансия</h2>
     </div>
     <div class="col-md-7">
         <nav class="navbar navbar-expand-lg navbar-light float-lg-right">
@@ -73,9 +73,9 @@
       <div class="nav-left-vacancy p-0">
         <ul class="pl-0">
           <li class="pb-3"><a class="active" href="">Условия</a></li>
-          <li class="pb-3"><a href="">Карьерный рост</a></li>
-          <li class="pb-3"><a href="">Семантика действий</a></li>
-          <li class="pb-3"><a href="">Схема работы</a></li>
+          <li class="pb-3"><a href="vacancy/career">Карьерный рост</a></li>
+          <li class="pb-3"><a href="vacancy/semantics">Семантика действий</a></li>
+          <li class="pb-3"><a href="vacancy/scheme">Схема работы</a></li>
         </ul>
       </div>
     </div>

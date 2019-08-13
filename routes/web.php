@@ -29,7 +29,7 @@ Route::get('/vacancy/scheme', function () {
 });
 Route::get('/contacts', function () {
     return view('contacts');
-});
+})->name('contacts');
 Route::get('/portfolio', function () {
     return view('portfolio');
 });
