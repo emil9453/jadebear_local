@@ -163,8 +163,9 @@ html, body{
 }
 #mac-img-members{
 	height: 470px;
-	background-image: url(../img/member.png);
-    background-size: 79% auto;
+	/*background-image: url(../img/member.png);*/
+    /*background-size: 79% auto;*/
+	background-size: cover;
     background-repeat:   no-repeat;
     background-position: 97px 0px;
 }
@@ -173,11 +174,11 @@ html, body{
 	height: 86px;
 	
 }
-.nav-btn .btn.left{
+.nav-btn .btn.right:hover, .nav-btn .btn.left:hover{
 	background: #FFDC2E;
 	
 }
-.nav-btn .btn.right{
+.nav-btn .btn.right , .nav-btn .btn.left{
 	background: white;
 	
 }
@@ -888,4 +889,11 @@ html, body{
 	background-image: url(../img/portfolio-item.png);
     background-size: 100% auto;
     background-repeat:   no-repeat;
+}
+
+.ourTeam-next-prev
+{
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 86px);
 }

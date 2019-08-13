@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\TeamMember;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
 {
     public function ourTeam(){
-        return view('ourTeam');
+        $teamMembers = TeamMember::all();
+        return view('ourTeam',compact('teamMembers'));
     }
     
     public function ourHistory(){
