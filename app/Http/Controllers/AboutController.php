@@ -18,6 +18,18 @@ class AboutController extends Controller
         return view('vacancy/vacancy');
     }
 
+    public function vacancyCareer(){
+        return view('vacancy/career');
+    }
+
+    public function vacancySemantics(){
+        return view('vacancy/semantic');
+    }
+
+    public function vacancyScheme(){
+        return view('vacancy/scheme');
+    }
+
     public function contacts(){
         return view('contacts');
     }

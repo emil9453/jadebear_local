@@ -36,15 +36,11 @@ Route::get('/ourTeam', 'AboutController@ourTeam')->name('ourTeam');
 Route::get('/ourHistory', 'AboutController@ourHistory')->name('ourHistory');
 // Get page  vacancy
 Route::get('/vacancy', 'AboutController@vacancy')->name('vacancy');
+// Get page  vacancy career
+Route::get('/vacancy/career', 'AboutController@vacancyCareer')->name('vacancyCareer');
+// Get page  vacancy semantics
+Route::get('/vacancy/semantics', 'AboutController@vacancySemantics')->name('vacancySemantics');
+// Get page  vacancy scheme
+Route::get('/vacancy/scheme', 'AboutController@vacancyScheme')->name('vacancyScheme');
 // Get page contactDetails
 Route::get('/contacts', 'AboutController@contacts')->name('contacts');
-
-Route::get('/vacancy/career', function () {
-    return view('vacancy.career');
-});
-Route::get('/vacancy/semantics', function () {
-    return view('vacancy.semantic');
-});
-Route::get('/vacancy/scheme', function () {
-    return view('vacancy.scheme');
-});
