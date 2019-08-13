@@ -73,9 +73,9 @@
       <div class="nav-left-vacancy p-0">
         <ul class="pl-0">
           <li class="pb-3"><a class="active" href="">Условия</a></li>
-          <li class="pb-3"><a href="vacancy/career">Карьерный рост</a></li>
-          <li class="pb-3"><a href="vacancy/semantics">Семантика действий</a></li>
-          <li class="pb-3"><a href="vacancy/scheme">Схема работы</a></li>
+          <li class="pb-3"><a href="{{ route('vacancyCareer') }}">Карьерный рост</a></li>
+          <li class="pb-3"><a href="{{ route('vacancySemantics') }}">Семантика действий</a></li>
+          <li class="pb-3"><a href="{{ route('vacancyScheme') }}">Схема работы</a></li>
         </ul>
       </div>
     </div>
