@@ -18,5 +18,19 @@ class MainController extends Controller
     public function vacancy(){
         return view('vacancy.vacancy');
     }
-    
+    public function services(){
+        return view('services');
+    }
+    public function reviews(){
+        return view('reviews');
+    }
+    public function blog(){
+        return view('blog');
+    }
+    public function article(){
+        return view('article');
+    }
+    public function partners(){
+        return view('partners.partners');
+    }
 }

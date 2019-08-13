@@ -33,3 +33,8 @@ Route::get('/contacts', function () {
 Route::get('/portfolio', function () {
     return view('portfolio');
 });
+Route::get('/services', 'MainController@services')->name('services');
+Route::get('/reviews', 'MainController@reviews')->name('reviews');
+Route::get('/blog', 'MainController@blog')->name('blog');
+Route::get('/blog/article', 'MainController@article')->name('article');
+Route::get('/partners', 'MainController@partners')->name('partners');

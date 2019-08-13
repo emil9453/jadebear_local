@@ -47,5 +47,6 @@ $('.menu, .overlay').click(function () {
 $('#btn-vacancy-responce').click(function () {
     $('.popup').toggleClass('clicked');
     $('#vacancy-nav').toggleClass('show');
+    $('.vacancy-overlay').toggleClass('show');
 });
 </script>
