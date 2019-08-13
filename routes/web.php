@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 // Get page about
 Route::get('/about', 'MainController@about')->name('about');
 // Get page portfolio
@@ -36,4 +37,14 @@ Route::get('/ourHistory', 'AboutController@ourHistory')->name('ourHistory');
 // Get page  vacancy
 Route::get('/vacancy', 'AboutController@vacancy')->name('vacancy');
 // Get page contactDetails
-Route::get('/contactDetails', 'AboutController@contactDetails')->name('contactDetails');
+Route::get('/contacts', 'AboutController@contacts')->name('contacts');
+
+Route::get('/vacancy/career', function () {
+    return view('vacancy.career');
+});
+Route::get('/vacancy/semantics', function () {
+    return view('vacancy.semantic');
+});
+Route::get('/vacancy/scheme', function () {
+    return view('vacancy.scheme');
+});

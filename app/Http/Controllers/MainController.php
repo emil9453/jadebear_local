@@ -11,8 +11,7 @@ class MainController extends Controller
     }
 
     public function portfolio(){
-        return view('temp');
-        //return view('portfolio');
+        return view('portfolio');
     }
 
     public function reviews(){

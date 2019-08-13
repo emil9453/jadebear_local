@@ -49,6 +49,12 @@ html, body{
 .determination{
 	font-family: Determination;
 }
+.proxima{
+	font-family: ProximaNova;
+}
+.cap50{
+	font-size: 50px;
+}
 .cap30{
 	font-size: 30px;
 }
@@ -58,11 +64,20 @@ html, body{
 .cap16{
 	font-size: 16px;
 }
+.cap14{
+	font-size: 14px;
+}
+.blue{
+	color: #2044E1;
+}
 .navbar {
 	width: 100%;
 }
-.page-title {
+.page-title h2{
 	font-size: 50px;
+}
+.page-title{
+	padding-left: 0px;
 }
 .nav-item {
 	padding-left: 15px;
@@ -142,6 +157,36 @@ html, body{
 #about-last .partners .col-3 img{
 	width: 100%;
 }
+
+#team-members .blue-back{
+	color: white;
+}
+#mac-img-members{
+	height: 470px;
+	background-image: url(../img/member.png);
+    background-size: 79% auto;
+    background-repeat:   no-repeat;
+    background-position: 97px 0px;
+}
+.nav-btn .btn{
+	width: 86px;
+	height: 86px;
+	
+}
+.nav-btn .btn.left{
+	background: #FFDC2E;
+	
+}
+.nav-btn .btn.right{
+	background: white;
+	
+}
+.nav-btn .btn img{
+	width: 27px;
+
+}
+
+
 .footer{
 	border-top: 2px solid #DBDBDB;
 }
@@ -181,7 +226,7 @@ html, body{
 	background: #2044E1;
 }
 
-.logo {
+.logo-white {
 	color: white;
 	margin-top: 0.5em;
 	font-weight: bold;
@@ -198,11 +243,13 @@ html, body{
 	padding-top: 0.5em;
 }
 .lang {
+	display: none;
 	width: 100%;
 	float: left;
 	padding: 10px 30px 15px 30px;
 }
 .lang.active {
+	display: block;
 	width: 100%;
 	float: left;
 	padding: 10px 15px 5px 15px;
@@ -492,9 +539,353 @@ html, body{
 	opacity: 0.8;
 	visibility: visible;
 }
+
+.banner{
+	width: 100%;
+	height: 290px;
+	background-image: url(../img/banner01.png);
+    background-size: 100% auto;
+    background-repeat:   no-repeat;
+}
+.banner .text{
+	position: absolute;
+	bottom: 35px;
+	left: 45px;
+}
+.nav-vacancy a{
+	color: black;
+}
+.nav-vacancy a:hover{
+	text-decoration: none;
+}
+.nav-vacancy .active{
+	background: #FFDC2E;
+}
+.nav-vacancy p{
+
+}
+.nav-vacancy span{
+	
+}
+.nav-left-vacancy ul{
+	width: 100%;
+	list-style-type: none;
+}
+
+.nav-left-vacancy ul a{
+	color: black;
+	font-size: 18px;
+
+}
+.nav-left-vacancy ul a:hover{
+	text-decoration: none;
+}
+#contract-example-link{
+	position: absolute;
+	bottom: 3%;
+}
+#btn-vacancy-responce{
+	position: absolute;
+	bottom: 0;
+}
+.container-fluid.my-padding{
+	padding:0% 8.5%;
+}
+
+
+
+/* Pop up for vacancy */
+
+.popup {
+	    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 21;
+    right: 1%;
+}
+.popup span {
+	position: relative;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -15px;
+	margin-top: -1.5px;
+}
+.popup span, .popup span::before, .popup span::after {
+	display: block;
+	
+		width: 26px;
+	right: 0;
+	height: 3px;
+	background-color: #fccb32;
+	outline: 1px solid transparent;
+	-webkit-transition-property: background-color, -webkit-transform;
+	-moz-transition-property: background-color, -moz-transform;
+	-o-transition-property: background-color, -o-transform;
+	transition-property: background-color, transform;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.popup span::before, .popup span::after {
+	position: absolute;
+	content: "";
+}
+.popup span::before {
+	top: -9px;
+	 width:20px
+}
+.popup span::after {
+	top: 9px;width: 33px;
+
+}
+.popup.clicked span {
+	background-color: transparent;
+}
+.popup.clicked span::before {
+	-webkit-transform: translateY(9px) rotate(45deg);
+	-moz-transform: translateY(9px) rotate(45deg);
+	-ms-transform: translateY(9px) rotate(45deg);
+	-o-transform: translateY(9px) rotate(45deg);
+	transform: translateY(9px) rotate(45deg);    width: 33px;
+}
+.popup.clicked span::after {
+	-webkit-transform: translateY(-9px) rotate(-45deg);
+	-moz-transform: translateY(-9px) rotate(-45deg);
+	-ms-transform: translateY(-9px) rotate(-45deg);
+	-o-transform: translateY(-9px) rotate(-45deg);
+	transform: translateY(-9px) rotate(-45deg);
+}
+.popup.clicked span:before, .popup.clicked span:after {
+	background-color: #ffffff;
+}
+.popup:hover {
+	cursor: pointer;
+}
+/*  NAV
+========================================== */
+
+#vacancy-nav {
+	background: #2044E1;
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 50%;
+	overflow-y: auto;
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	-o-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-o-transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+#vacancy-nav.show {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+}
+#vacancy-nav.show ul.main li {
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-o-transform: translateX(0px);
+	transform: translateX(0px);
+	opacity: 1;
+}
+.popup.clicked {
+    position: fixed;
+    z-index: 99;
+}
+
+
+
+
+/*  Overlay */
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 7;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #603e82;
+	opacity: 0;
+	visibility: hidden;
+}
+.overlay.show {
+	opacity: 0.8;
+	visibility: visible;
+}
+
+.banner{
+	width: 100%;
+	height: 290px;
+	background-image: url(../img/banner01.png);
+    background-size: 100% auto;
+    background-repeat:   no-repeat;
+}
+.banner .text{
+	position: absolute;
+	bottom: 35px;
+	left: 45px;
+}
+.nav-vacancy a{
+	color: black;
+}
+.nav-vacancy a:hover{
+	text-decoration: none;
+}
+.nav-vacancy .active{
+	background: #FFDC2E;
+}
+.nav-vacancy p{
+
+}
+.nav-vacancy span{
+	
+}
+.nav-left-vacancy ul{
+	width: 100%;
+	list-style-type: none;
+}
+
+.nav-left-vacancy ul a{
+	color: black;
+	font-size: 18px;
+}
+.nav-left-vacancy ul .active{
+	color: #2044E1;
+}
+.nav-left-vacancy ul a:hover{
+	text-decoration: none;
+}
+#contract-example-link{
+	position: absolute;
+	bottom: 3%;
+}
+#btn-vacancy-responce{
+	position: absolute;
+	bottom: 0;
+}
+.container-fluid.my-padding{
+	padding:0% 8.5%;
+}
+
+
+/*  Timeline in page our history */
+.timeline {
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  padding: 0px;
+  position: relative;
+}
+.timeline:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 4px;
+  background: #DBDBDB;
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+}
+.entry .title {
+  margin-bottom: 4.2em;
+  float: left;
+  width: 95%;
+  padding-left: 10px;
+  text-align: left;
+  position: relative;
+}
+.entry .title:before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border: 7px solid #2044E1;
+  background-color: #fff;
+  border-radius: 100%;
+  top: -5%;
+  left: -10px;
+  z-index: 99;
+}
+.entry .title h3 {
+  margin-left: 30px;
+}
+.entry .title p {
+  margin: 0;
+  font-size: 100%;
+}
+.entry.active .title:before{
+  width: 13px;
+  height: 13px;
+  border: 4px solid #FFDC2E;
+  top: 10%;
+  left: -5px;
+}
 @media (max-width: 667px) {
 	#nav {
 		padding: 29px 30px 70px 20px;
 		max-width: 100%;
 	}
+}
+
+/* Contacts */
+#contacts-container b{
+	font-size: 18px;
+	line-height: 30px;
+}
+#contacts-container #map img{
+	width: 100%;
+}
+#portfolio-banner{
+	width: 100%;
+	height: 290px;
+	background-image: url(../img/portfolio-banner.png);
+    background-size: 100% auto;
+    background-repeat:   no-repeat;
+}
+#portfolio-first{
+	height: 400px;
+}
+#portfolio-first h2{
+	margin-top: 15%;
+}
+#portfolio-more-btn{
+	position: absolute;
+	right: 6%;
+	bottom: 10%;
+}
+#portfolio-more-btn img{
+	width: 60px;
+}
+.portfolio-item{
+	width: 100%;
+	background-image: url(../img/portfolio-item.png);
+    background-size: 100% auto;
+    background-repeat:   no-repeat;
 }

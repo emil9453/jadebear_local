@@ -7,23 +7,19 @@ use Illuminate\Http\Request;
 class AboutController extends Controller
 {
     public function ourTeam(){
-    	return view('temp');
-        //return view('ourTeam');
+        return view('ourTeam');
     }
     
     public function ourHistory(){
-    	return view('temp');
-        //return view('ourHistory');
+        return view('ourHistory');
     }
 
     public function vacancy(){
-    	return view('temp');
-        //return view('vacancy');
+        return view('vacancy/vacancy');
     }
 
-    public function contactDetails(){
-    	return view('temp');
-        //return view('contactDetails');
+    public function contacts(){
+        return view('contacts');
     }
     
 }
