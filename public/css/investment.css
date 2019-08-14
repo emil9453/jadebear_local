@@ -1,0 +1,116 @@
+.toInvestorsUl
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+.toInvestorsList
+{
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.toInvestorsList.active
+{
+    color: #2044e1;
+}
+.work-scheme .content
+{
+    position: absolute;
+    left: 38px;
+    top: 12px;
+    z-index: 2;
+}
+.work-scheme .number
+{
+    width: 57px;
+    height: 60px;
+}
+.work-scheme
+{
+    position: relative;
+    margin-bottom: 40px;
+}
+.investment_politics,.investment_scheme
+{
+    color: #2044e1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.investment_politics
+{
+    float: left;
+}
+.investment_scheme
+{
+    float: right;
+}
+
+.namingDiv
+{
+    width: 100%;
+    height: 270px;
+    background-color: #dbdbdb;
+    margin-top: 20px;
+    position: relative;
+}
+
+.naming
+{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+
+
+.investTimeline
+{
+    margin-top: 45px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.timelineRow
+{
+    height: 3px;
+    width: 125px;
+    background: gainsboro;
+    float: left;
+    margin-top: 12px;
+    position: relative;
+    /*right: 40px;*/
+}
+.timelineBall
+{
+    content: '';
+    position: relative;
+    width: 25px;
+    float: left;
+    height: 25px;
+    border: 7px solid #2044E1;
+    background-color: #fff;
+    border-radius: 100%;
+    z-index: 2;
+    cursor: pointer;
+}
+.investTimelinePart
+{
+    /*padding-left: 13px;*/
+    margin-bottom: 30px;
+    float: left;
+    position: relative;
+}
+
+.timelineYear
+{
+    position: absolute;
+    top: 25px;
+    left: -5px;
+    font-size: 17px;
+}
+.timelineYear.active
+{
+    color: #1540fb;
+}

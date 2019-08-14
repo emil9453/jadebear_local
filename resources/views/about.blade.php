@@ -164,7 +164,7 @@
                 <li><a href="{{ route('portfolio') }}">ПОРТФОЛИО</a></li>
                 <li><a href="{{ route('reviews') }}">ОТЗЫВЫ</a></li>
                 <li><a href="{{ route('services') }}">УСЛУГИ</a></li>
-                <li><a href="{{ route('toPartners') }}">ПАРТНЕРАМ</a></li>
+                <li><a href="{{ route('partners') }}">ПАРТНЕРАМ</a></li>
                 <li><a href="{{ route('toInvestors') }}">ИНВЕСТОРАМ</a></li>
                 <li><a href="{{ route('blog') }}">БЛОГ</a></li>
             </ul>

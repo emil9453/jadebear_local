@@ -212,6 +212,13 @@ html, body{
 	padding-left: 27px;
 	padding-right: 27px;
 }
+.my-btn-yellow{
+	color: black;
+	border-radius: 0;
+	background: #FFDC2E;
+	padding-left: 20px;
+	padding-right: 20px;
+}
 .copyright span{
 	font-size: 14px;
 	font-weight: bold;
@@ -575,7 +582,7 @@ html, body{
 
 .nav-left-vacancy ul a{
 	color: black;
-	font-size: 18px;
+	font-size: 16px;
 
 }
 .nav-left-vacancy ul a:hover{
@@ -595,86 +602,12 @@ html, body{
 
 
 
-/* Pop up for vacancy */
 
-.popup {
-	    width: 50px;
-    height: 50px;
-    position: absolute;
-    z-index: 21;
-    right: 1%;
-}
-.popup span {
-	position: relative;
-	margin-top: 9px;
-	margin-bottom: 9px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-left: -15px;
-	margin-top: -1.5px;
-}
-.popup span, .popup span::before, .popup span::after {
-	display: block;
-	
-		width: 26px;
-	right: 0;
-	height: 3px;
-	background-color: #fccb32;
-	outline: 1px solid transparent;
-	-webkit-transition-property: background-color, -webkit-transform;
-	-moz-transition-property: background-color, -moz-transform;
-	-o-transition-property: background-color, -o-transform;
-	transition-property: background-color, transform;
-	-webkit-transition-duration: 0.3s;
-	-moz-transition-duration: 0.3s;
-	-o-transition-duration: 0.3s;
-	transition-duration: 0.3s;
-}
-.popup span::before, .popup span::after {
-	position: absolute;
-	content: "";
-}
-.popup span::before {
-	top: -9px;
-	 width:20px
-}
-.popup span::after {
-	top: 9px;width: 33px;
-
-}
-.popup.clicked span {
-	background-color: transparent;
-}
-.popup.clicked span::before {
-	-webkit-transform: translateY(9px) rotate(45deg);
-	-moz-transform: translateY(9px) rotate(45deg);
-	-ms-transform: translateY(9px) rotate(45deg);
-	-o-transform: translateY(9px) rotate(45deg);
-	transform: translateY(9px) rotate(45deg);    width: 33px;
-}
-.popup.clicked span::after {
-	-webkit-transform: translateY(-9px) rotate(-45deg);
-	-moz-transform: translateY(-9px) rotate(-45deg);
-	-ms-transform: translateY(-9px) rotate(-45deg);
-	-o-transform: translateY(-9px) rotate(-45deg);
-	transform: translateY(-9px) rotate(-45deg);
-}
-.popup.clicked span:before, .popup.clicked span:after {
-	background-color: #ffffff;
-}
-.popup:hover {
-	cursor: pointer;
-}
-/*  NAV
+/*  Popup form in vacancy
 ========================================== */
 
 #vacancy-nav {
-	background: #2044E1;
+	background: white;
 	position: fixed;
 	z-index: 20;
 	top: 0;
@@ -699,42 +632,103 @@ html, body{
 	-o-transform: translateX(0px);
 	transform: translateX(0px);
 }
-#vacancy-nav.show ul.main li {
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	-ms-transform: translateX(0px);
-	-o-transform: translateX(0px);
-	transform: translateX(0px);
-	opacity: 1;
-}
 .popup.clicked {
     position: fixed;
     z-index: 99;
 }
 
-
-
-
 /*  Overlay */
-.overlay {
+.vacancy-overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 7;
+	z-index: 1;
 	width: 100%;
 	height: 100%;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	background-color: #603e82;
+	background: black;
 	opacity: 0;
 	visibility: hidden;
 }
-.overlay.show {
-	opacity: 0.8;
+.vacancy-overlay.show {
+	opacity: 0.3;
 	visibility: visible;
 }
+#vacancy-nav .close {
+	position: relative;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -15px;
+	margin-top: -1.5px;
+}
+.menu.white span, .menu.white span::before, .menu.white span::after {
+	background-color: white;
+}
+.menu.black span, .menu.black span::before, .menu.black span::after{
+	background-color: black;
+}
+.menu span, .menu span::before, .menu span::after {
+	display: block;
+	width: 26px;
+	height: 3px;
+	outline: 1px solid transparent;
+	-webkit-transition-property: background-color, -webkit-transform;
+	-moz-transition-property: background-color, -moz-transform;
+	-o-transition-property: background-color, -o-transform;
+	transition-property: background-color, transform;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.menu span::before, .menu span::after {
+	position: absolute;
+	content: "";
+}
+.menu span::before {
+	top: -9px;
+	width:12px
+}
+.menu span::after {
+	top: 9px;
+	left: 15px;
+	width: 12px;
+
+}
+.menu.clicked span {
+	background-color: transparent;
+}
+.menu.clicked span::before {
+	-webkit-transform: translateY(9px) rotate(45deg);
+	-moz-transform: translateY(9px) rotate(45deg);
+	-ms-transform: translateY(9px) rotate(45deg);
+	-o-transform: translateY(9px) rotate(45deg);
+	transform: translateY(9px) rotate(45deg);    width: 33px;
+}
+.menu.clicked span::after {
+	-webkit-transform: translateY(-9px) rotate(-45deg);
+	-moz-transform: translateY(-9px) rotate(-45deg);
+	-ms-transform: translateY(-9px) rotate(-45deg);
+	-o-transform: translateY(-9px) rotate(-45deg);
+	transform: translateY(-9px) rotate(-45deg);
+	left: 1px;
+}
+.menu.clicked span:before, .menu.clicked span:after {
+	background-color: #ffffff;
+	width: 33px;
+}
+
+
 
 .banner{
 	width: 100%;
@@ -770,7 +764,7 @@ html, body{
 
 .nav-left-vacancy ul a{
 	color: black;
-	font-size: 18px;
+	font-size: 16px;
 }
 .nav-left-vacancy ul .active{
 	color: #2044E1;
@@ -890,10 +884,95 @@ html, body{
     background-size: 100% auto;
     background-repeat:   no-repeat;
 }
-
 .ourTeam-next-prev
 {
-	position: absolute;
-	bottom: 0;
-	left: calc(50% - 86px);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 86px);
+}
+.service-left a{
+	width: 100%;
+}
+.service-left .btn{
+	width: 100%;
+}
+.service-right.banner{
+	height: 200px;
+}
+.review-item{
+	width: 100%;
+
+}
+.review-item img{
+	width: 100%;
+}
+.review-item .bottom b, .review-item .bottom span{
+	color: white;
+	font-weight: bold;
+	float: left;
+	width: 100%;
+}
+.blog-nav a{
+	color: black;
+}
+#blog-articles .item .image{
+	width: 100%;
+	background-image: url(../img/blog-img.png);
+    background-size: 100% auto;
+    background-repeat:   no-repeat;
+    background-position: 0% 0px;
+}
+#blog-articles .item .title{
+	padding-right: 30%;
+}
+#blog-articles .item .title a{
+	line-height: 24px;
+}
+#blog-popular .popular.active{
+	background-image: url(../img/blog-back.png);
+    background-size: 100% 100%;
+    background-repeat:   no-repeat;
+    background-position: 0% 0px;
+}
+#blog-popular .popular{
+	width: 100%;
+}
+#blog-popular .popular h4{
+	color: black;
+	margin-top: 7px;
+}
+#blog-popular .popular.active h4{
+	color: white;
+}
+#blog-popular .popular .circle{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	padding: 8px;
+	text-align: center;
+	color: #FFDC2E;
+	border: 2px solid #FFDC2E;
+	margin-right: 10px;
+}
+.page-title data{
+	color: grey;
+}
+.article-banner{
+	height: 260px;
+	background-image: url(../img/article-banner.png);
+    background-size: 100% 100%;
+    background-repeat:   no-repeat;
+    background-position: 0% 0px;
+}
+.author img{
+	width: 50%;
+}
+.art-social a{
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	padding: 8px;
+	text-align: center;
+	background: #F8F8F8;
+	margin-right: 10px;
 }

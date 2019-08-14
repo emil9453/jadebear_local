@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 // Get page about
 Route::get('/about', 'MainController@about')->name('about');
+
 // Get page portfolio
 Route::get('/portfolio', 'MainController@portfolio')->name('portfolio');
 // Get page reviews
@@ -24,11 +25,17 @@ Route::get('/reviews', 'MainController@reviews')->name('reviews');
 // Get page services
 Route::get('/services', 'MainController@services')->name('services');
 // Get page toPartners
-Route::get('/toPartners', 'MainController@toPartners')->name('toPartners');
+Route::get('/partners', 'MainController@partners')->name('partners');
 // Get page toInvestors
 Route::get('/toInvestors', 'MainController@toInvestors')->name('toInvestors');
 // Get page blog
 Route::get('/blog', 'MainController@blog')->name('blog');
+// Get page article
+Route::get('/article', 'MainController@article')->name('article');
+
+Route::get('/specialOffer', 'MainController@specialOffer')->name('specialOffer');
+Route::get('/relationshipHistory', 'MainController@relationshipHistory')->name('relationshipHistory');
+
 
 // Get page our Teams
 Route::get('/ourTeam', 'AboutController@ourTeam')->name('ourTeam');
@@ -66,9 +73,9 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.password.reset');
 
-Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
+Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function ()
+{
     Route::get('/home', 'HomeController@index');
-
     Route::resource('roles', 'Admin\RolesController');
     Route::post('roles_mass_destroy', ['uses' => 'Admin\RolesController@massDestroy', 'as' => 'roles.mass_destroy']);
     Route::resource('users', 'Admin\UsersController');

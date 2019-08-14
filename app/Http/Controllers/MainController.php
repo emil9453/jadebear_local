@@ -15,27 +15,34 @@ class MainController extends Controller
     }
 
     public function reviews(){
-        return view('temp');
-        //return view('reviews');
+        return view('reviews');
     }
 
     public function services(){
-        return view('temp');
-        //return view('services');
+        return view('services');
     }
 
-    public function toPartners(){
-        return view('temp');
-        //return view('toPartners');
+    public function partners(){
+        return view('partners/partners');
     }
 
     public function toInvestors(){
-        return view('temp');
-        //return view('toInvestors');
+        return view('toInvestors');
+    }
+
+    public function specialOffer(){
+        return view('specialOffer');
+    }
+
+    public function relationshipHistory(){
+        return view('relationshipHistory');
     }
 
     public function blog(){
-        return view('temp');
-        //return view('blog');
+        return view('blog');
+    }
+
+    public function article(){
+        return view('article');
     }
 }

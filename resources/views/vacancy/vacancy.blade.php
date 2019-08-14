@@ -73,9 +73,9 @@
       <div class="nav-left-vacancy p-0">
         <ul class="pl-0">
           <li class="pb-3"><a class="active" href="">Условия</a></li>
-          <li class="pb-3"><a href="vacancy/career">Карьерный рост</a></li>
-          <li class="pb-3"><a href="vacancy/semantics">Семантика действий</a></li>
-          <li class="pb-3"><a href="vacancy/scheme">Схема работы</a></li>
+          <li class="pb-3"><a href="{{ route('vacancyCareer') }}">Карьерный рост</a></li>
+          <li class="pb-3"><a href="{{ route('vacancySemantics') }}">Семантика действий</a></li>
+          <li class="pb-3"><a href="{{ route('vacancyScheme') }}">Схема работы</a></li>
         </ul>
       </div>
     </div>
@@ -128,14 +128,21 @@
     </div>
   </div>
 </div>
-<div class="popup"><span></span></div>
 <nav id="vacancy-nav">
-  <p class="nav-title">МЕНЮ</p>
   <div class="content">
+    <div class="row">
+      <div class="col-3">
+        <span class="close">
+        </span>
+      </div>
+      <div class="col-9">
+        <h2>ВАКАНСИЯ UX ДИЗАЙНЕРА</h2>
+      </div>
+    </div>
     
   </div>
 </nav>
-<div class="overlay"></div>
+<div class="vacancy-overlay"></div>
 @include('components.footer')
 
 @endsection
