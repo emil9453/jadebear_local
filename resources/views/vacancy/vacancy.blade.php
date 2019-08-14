@@ -128,14 +128,21 @@
     </div>
   </div>
 </div>
-<div class="popup"><span></span></div>
 <nav id="vacancy-nav">
-  <p class="nav-title">МЕНЮ</p>
   <div class="content">
+    <div class="row">
+      <div class="col-3">
+        <span class="close">
+        </span>
+      </div>
+      <div class="col-9">
+        <h2>ВАКАНСИЯ UX ДИЗАЙНЕРА</h2>
+      </div>
+    </div>
     
   </div>
 </nav>
-<div class="overlay"></div>
+<div class="vacancy-overlay"></div>
 @include('components.footer')
 
 @endsection
