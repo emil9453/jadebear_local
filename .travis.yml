@@ -1,0 +1,26 @@
+language: php
+
+php:
+  - 7.0
+  - 7.1
+  - 7.3
+
+before_script:
+  - cp .env.travis .env
+  - composer self-update
+  - composer install --prefer-source --no-interaction --dev
+  - php artisan key:generate
+  - php artisan jwt:generate
+  - php artisan migrate --seed
+
+before_install:
+  - mysql -e 'CREATE DATABASE jadebear;'
+
+script:
+  - phpunit
+
+services:
+  - mysql
+
+notifications:
+  email: false
