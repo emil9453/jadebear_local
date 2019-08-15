@@ -31,7 +31,6 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-
     "extra": {
         "laravel": {
             "dont-discover": [
