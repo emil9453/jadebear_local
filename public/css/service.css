@@ -1,0 +1,35 @@
+.service
+{
+    margin-top: 20px;
+}
+
+.article
+{
+    float: left;
+    margin-bottom: 15px;
+}
+
+.article [data-img]
+{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 140px;
+    background-size: cover;
+}
+
+.articlesContainer
+{
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.article-inner
+{
+    border: 1px solid #dbdbdb;
+}
+
+.article-inner h3, .article-inner .article_body, .article-inner a
+{
+    padding-left: 10px;
+}

@@ -16,19 +16,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav cap16">
               <li class="nav-item">
-                <a class="nav-link" href="#">О нас </a>
+                <a class="nav-link" href="{{ route('about') }}">О нас </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Наша команда </a>
+                <a class="nav-link" href="{{ route('ourTeam') }}">Наша команда </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Наша история</a>
+                <a class="nav-link" href="{{ route('ourHistory') }}">Наша история</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Вакансия <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Контакты и реквизиты</a>
+                <a class="nav-link" href="{{ route('contacts') }}">Контакты и реквизиты</a>
               </li>
             </ul>
             </div>
@@ -72,10 +72,10 @@
     <div class="col-3 p-0">
       <div class="nav-left-vacancy p-0">
         <ul class="pl-0">
-          <li class="pb-3"><a href="vacancy/vacancy">Условия</a></li>
+          <li class="pb-3"><a href="{{ route('vacancy') }}">Условия</a></li>
           <li class="pb-3"><a class="active" href="">Карьерный рост</a></li>
-          <li class="pb-3"><a href="vacancy/semantics">Семантика действий</a></li>
-          <li class="pb-3"><a href="vacancy/scheme">Схема работы</a></li>
+          <li class="pb-3"><a href="{{ route('vacancySemantics') }}">Семантика действий</a></li>
+          <li class="pb-3"><a href="{{ route('vacancyScheme') }}">Схема работы</a></li>
         </ul>
       </div>
     </div>
