@@ -47,6 +47,42 @@ return [
             'photo' => 'Photo',
         ],
     ],
+
+
+    'relationship-history' => [
+        'title' => 'Relationship history',
+        'fields' => [
+            'year' => 'Year',
+            'caption1' => 'Caption1',
+            'caption2' => 'Caption2',
+        ],
+    ],
+
+    'special-offers' => [
+        'title' => 'Special offers',
+        'fields' => [
+            'photo' => 'Photo',
+            'caption1' => 'Caption1',
+            'caption2' => 'Caption2',
+        ],
+    ],
+
+    'work-schema' => [
+        'title' => 'Work schema',
+        'fields' => [
+            'digit' => 'Digit',
+            'text' => 'Text',
+        ],
+    ],
+
+    'faq' => [
+        'title' => 'Faq',
+        'fields' => [
+            'caption' => 'Caption',
+            'text' => 'Text',
+        ],
+    ],
+
     'qa_create' => 'Create',
     'qa_save' => 'Save',
     'qa_edit' => 'Edit',

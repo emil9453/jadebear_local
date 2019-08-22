@@ -91,5 +91,74 @@ class AuthServiceProvider extends ServiceProvider
             return in_array($user->role_id, [1, 2]);
         });
 
+        // Auth gates for: Relationship history
+        Gate::define('relationship_history_access', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('relationship_history_create', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('relationship_history_edit', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('relationship_history_view', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('relationship_history_delete', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+
+        // Auth gates for: Special offers
+        Gate::define('special_offer_access', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('special_offer_create', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('special_offer_edit', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('special_offer_view', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('special_offer_delete', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+
+        // Auth gates for: Work schema
+        Gate::define('work_schema_access', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('work_schema_create', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('work_schema_edit', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('work_schema_view', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('work_schema_delete', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+
+        // Auth gates for: Faq
+        Gate::define('faq_access', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('faq_create', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('faq_edit', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('faq_view', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('faq_delete', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+
+
     }
 }
