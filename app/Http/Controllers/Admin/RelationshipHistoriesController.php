@@ -40,7 +40,9 @@ class RelationshipHistoriesController extends Controller
                 'relationship_histories.id',
                 'relationship_histories.year',
                 'relationship_histories.caption1',
+                'relationship_histories.text1',
                 'relationship_histories.caption2',
+                'relationship_histories.text2',
             ]);
             $table = Datatables::of($query);
 
@@ -61,8 +63,14 @@ class RelationshipHistoriesController extends Controller
             $table->editColumn('caption1', function ($row) {
                 return $row->caption1 ? $row->caption1 : '';
             });
+            $table->editColumn('text1', function ($row) {
+                return $row->text1 ? $row->text1 : '';
+            });
             $table->editColumn('caption2', function ($row) {
                 return $row->caption2 ? $row->caption2 : '';
+            });
+            $table->editColumn('text2', function ($row) {
+                return $row->text2 ? $row->text2 : '';
             });
 
             $table->rawColumns(['actions','massDelete']);

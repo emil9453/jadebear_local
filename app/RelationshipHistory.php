@@ -10,13 +10,15 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @package App
  * @property integer $year
  * @property string $caption1
+ * @property text $text1
  * @property string $caption2
+ * @property string $text2
 */
 class RelationshipHistory extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['year', 'caption1', 'caption2'];
+    protected $fillable = ['year', 'caption1', 'text1', 'caption2', 'text2'];
     protected $hidden = [];
     
     

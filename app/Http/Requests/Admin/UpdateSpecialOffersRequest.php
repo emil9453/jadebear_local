@@ -26,7 +26,6 @@ class UpdateSpecialOffersRequest extends FormRequest
             
             'photo' => 'nullable|mimes:png,jpg,jpeg,gif',
             'caption1' => 'required',
-            'caption2' => 'nullable|mimes:png,jpg,jpeg,gif',
         ];
     }
 }

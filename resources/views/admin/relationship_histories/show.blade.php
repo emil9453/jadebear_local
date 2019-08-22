@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @section('content')
     <h3 class="page-title">@lang('quickadmin.relationship-history.title')</h3>
@@ -21,8 +21,16 @@
                             <td field-key='caption1'>{{ $relationship_history->caption1 }}</td>
                         </tr>
                         <tr>
+                            <th>@lang('quickadmin.relationship-history.fields.text1')</th>
+                            <td field-key='text1'>{!! $relationship_history->text1 !!}</td>
+                        </tr>
+                        <tr>
                             <th>@lang('quickadmin.relationship-history.fields.caption2')</th>
                             <td field-key='caption2'>{{ $relationship_history->caption2 }}</td>
+                        </tr>
+                        <tr>
+                            <th>@lang('quickadmin.relationship-history.fields.text2')</th>
+                            <td field-key='text2'>{{ $relationship_history->text2 }}</td>
                         </tr>
                     </table>
                 </div>

@@ -94,4 +94,30 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::post('team_members_mass_destroy', ['uses' => 'Admin\TeamMembersController@massDestroy', 'as' => 'team_members.mass_destroy']);
     Route::post('team_members_restore/{id}', ['uses' => 'Admin\TeamMembersController@restore', 'as' => 'team_members.restore']);
     Route::delete('team_members_perma_del/{id}', ['uses' => 'Admin\TeamMembersController@perma_del', 'as' => 'team_members.perma_del']);
+
+    Route::resource('relationship_histories', 'Admin\RelationshipHistoriesController');
+    Route::post('relationship_histories_mass_destroy', ['uses' => 'Admin\RelationshipHistoriesController@massDestroy', 'as' => 'relationship_histories.mass_destroy']);
+    Route::post('relationship_histories_restore/{id}', ['uses' => 'Admin\RelationshipHistoriesController@restore', 'as' => 'relationship_histories.restore']);
+    Route::delete('relationship_histories_perma_del/{id}', ['uses' => 'Admin\RelationshipHistoriesController@perma_del', 'as' => 'relationship_histories.perma_del']);
+    Route::resource('special_offers', 'Admin\SpecialOffersController');
+    Route::post('special_offers_mass_destroy', ['uses' => 'Admin\SpecialOffersController@massDestroy', 'as' => 'special_offers.mass_destroy']);
+    Route::post('special_offers_restore/{id}', ['uses' => 'Admin\SpecialOffersController@restore', 'as' => 'special_offers.restore']);
+    Route::delete('special_offers_perma_del/{id}', ['uses' => 'Admin\SpecialOffersController@perma_del', 'as' => 'special_offers.perma_del']);
+    Route::resource('politics', 'Admin\PoliticsController');
+    Route::post('politics_mass_destroy', ['uses' => 'Admin\PoliticsController@massDestroy', 'as' => 'politics.mass_destroy']);
+    Route::post('politics_restore/{id}', ['uses' => 'Admin\PoliticsController@restore', 'as' => 'politics.restore']);
+    Route::delete('politics_perma_del/{id}', ['uses' => 'Admin\PoliticsController@perma_del', 'as' => 'politics.perma_del']);
+    Route::resource('media', 'Admin\MediaController');
+    Route::post('media_mass_destroy', ['uses' => 'Admin\MediaController@massDestroy', 'as' => 'media.mass_destroy']);
+    Route::post('media_restore/{id}', ['uses' => 'Admin\MediaController@restore', 'as' => 'media.restore']);
+    Route::delete('media_perma_del/{id}', ['uses' => 'Admin\MediaController@perma_del', 'as' => 'media.perma_del']);
+    Route::resource('work_schemas', 'Admin\WorkSchemasController');
+    Route::post('work_schemas_mass_destroy', ['uses' => 'Admin\WorkSchemasController@massDestroy', 'as' => 'work_schemas.mass_destroy']);
+    Route::post('work_schemas_restore/{id}', ['uses' => 'Admin\WorkSchemasController@restore', 'as' => 'work_schemas.restore']);
+    Route::delete('work_schemas_perma_del/{id}', ['uses' => 'Admin\WorkSchemasController@perma_del', 'as' => 'work_schemas.perma_del']);
+    Route::resource('faqs', 'Admin\FaqsController');
+    Route::post('faqs_mass_destroy', ['uses' => 'Admin\FaqsController@massDestroy', 'as' => 'faqs.mass_destroy']);
+    Route::post('faqs_restore/{id}', ['uses' => 'Admin\FaqsController@restore', 'as' => 'faqs.restore']);
+    Route::delete('faqs_perma_del/{id}', ['uses' => 'Admin\FaqsController@perma_del', 'as' => 'faqs.perma_del']);
+
 });

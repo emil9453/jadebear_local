@@ -159,6 +159,39 @@ class AuthServiceProvider extends ServiceProvider
             return in_array($user->role_id, [1, 2]);
         });
 
+        // Auth gates for: Politics
+        Gate::define('politic_access', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('politic_create', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('politic_edit', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('politic_view', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('politic_delete', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+
+        // Auth gates for: Media
+        Gate::define('medium_access', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('medium_create', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('medium_edit', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('medium_view', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
+        Gate::define('medium_delete', function ($user) {
+            return in_array($user->role_id, [1, 2]);
+        });
 
     }
 }

@@ -25,7 +25,9 @@ class StoreRelationshipHistoriesRequest extends FormRequest
         return [
             'year' => 'max:2147483647|required|numeric',
             'caption1' => 'required',
+            'text1' => 'required',
             'caption2' => 'required',
+            'text2' => 'required',
         ];
     }
 }

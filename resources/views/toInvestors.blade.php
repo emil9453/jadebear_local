@@ -30,24 +30,16 @@
     </div>
     <div class="col-md-5" style="margin-bottom: 50px;">
         <h3 class="text-uppercase" >Схема работы</h3>
+
+        @foreach($content as $block)
         <div class="work-scheme">
-            <img class="number" src="img/about-num01.png" alt="">
+            <img class="number" src="{{asset($block->digit)}}" alt="">
             <span class="content">
-                Идейниые соображения высшего порядка , а также сложившаяся структура организации позволяеи выполнять важные задания по разроботке модели развития.
+                {{$block->text}}
             </span>
         </div>
-        <div class="work-scheme">
-            <img class="number" src="img/about-num02.png" alt="">
-            <span class="content">
-                Идейниые соображения высшего порядка , а также сложившаяся структура организации позволяеи выполнять важные задания по разроботке модели развития.
-            </span>
-        </div>
-        <div class="work-scheme">
-            <img class="number" src="img/about-num03.png" alt="">
-            <span class="content">
-                Идейниые соображения высшего порядка , а также сложившаяся структура организации позволяеи выполнять важные задания по разроботке модели развития.
-            </span>
-        </div>
+        @endforeach
+
         <div style="margin-bottom: 20px;">
             <span class="investment_politics">Политика Инвестирования</span>
             <span class="investment_scheme">Схема Инвестирования</span>

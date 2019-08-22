@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\RelationshipHistory;
+use App\SpecialOffer;
+use App\WorkSchema;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -26,16 +29,21 @@ class MainController extends Controller
         return view('partners/partners');
     }
 
-    public function toInvestors(){
-        return view('toInvestors');
+    public function toInvestors()
+    {
+        $content = WorkSchema::all();
+        //dd($content);
+        return view('toInvestors',compact('content'));
     }
 
     public function specialOffer(){
-        return view('specialOffer');
+        $content = SpecialOffer::all();
+        return view('specialOffer',compact('content'));
     }
 
     public function relationshipHistory(){
-        return view('relationshipHistory');
+        $content = RelationshipHistory::orderBy('year')->get();
+        return view('relationshipHistory',compact('content'));
     }
 
     public function blog(){

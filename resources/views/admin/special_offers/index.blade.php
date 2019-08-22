@@ -1,5 +1,5 @@
 @inject('request', 'Illuminate\Http\Request')
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @section('content')
     <h3 class="page-title">@lang('quickadmin.special-offers.title')</h3>
@@ -34,8 +34,11 @@
                         @endcan
 
                         <th>@lang('quickadmin.special-offers.fields.photo')</th>
+                        <th>@lang('quickadmin.special-offers.fields.photo-name')</th>
                         <th>@lang('quickadmin.special-offers.fields.caption1')</th>
+                        <th>@lang('quickadmin.special-offers.fields.text1')</th>
                         <th>@lang('quickadmin.special-offers.fields.caption2')</th>
+                        <th>@lang('quickadmin.special-offers.fields.tetxt2')</th>
                         @if( request('show_deleted') == 1 )
                         <th>&nbsp;</th>
                         @else
@@ -60,8 +63,11 @@
                     {data: 'massDelete', name: 'id', searchable: false, sortable: false},
                 @endif
                 @endcan{data: 'photo', name: 'photo'},
+                {data: 'photo_name', name: 'photo_name'},
                 {data: 'caption1', name: 'caption1'},
+                {data: 'text1', name: 'text1'},
                 {data: 'caption2', name: 'caption2'},
+                {data: 'tetxt2', name: 'tetxt2'},
                 
                 {data: 'actions', name: 'actions', searchable: false, sortable: false}
             ];

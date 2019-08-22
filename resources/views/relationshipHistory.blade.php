@@ -3,6 +3,16 @@
 @section('background', 'white-back')
 @section('menu-type', 'black')
 @section('content')
+    <script>
+        let makeActive = (element) =>
+        {
+            let year = element.text().trim();
+            $('[year]').hide();
+            $('.timelineYear').removeClass('active');
+            element.addClass('active');
+            $('[year="'+year+'"]').fadeIn(300);
+        }
+    </script>
     <link rel="stylesheet" href="{{asset('css/investment.css')}}">
 <div class="row pt-5">
         <div class="col-md-4 offset-md-1 page-title">
@@ -24,75 +34,39 @@
         <div class="col-md-7" style="margin-bottom: 50px;">
             <h3 class="text-uppercase" >История взаимиотношений</h3>
             <div class="investTimeline">
-                <div class="investTimelinePart">
-                    <div class="timelineBall">
+                @foreach($content as $block)
+                    <div class="investTimelinePart">
+                        <div class="timelineBall">
 
-                    </div>
-                    <div class="timelineYear active">
-                        2014
-                    </div>
-                    <span class="timelineRow">
+                        </div>
+                        <div class="timelineYear" onclick="makeActive($(this))">
+                            {{$block->year}}
+                        </div>
+                        <span class="timelineRow">
 
-                    </span>
-                </div>
-                <div class="investTimelinePart">
-                    <div class="timelineBall">
-
+                        </span>
                     </div>
-                    <div class="timelineYear">
-                        2015
-                    </div>
-                    <span class="timelineRow">
-
-                    </span>
-                </div>
-                <div class="investTimelinePart">
-                    <div class="timelineBall">
-
-                    </div>
-                    <div class="timelineYear">
-                        2016
-                    </div>
-                    <span class="timelineRow">
-
-                    </span>
-                </div>
-                <div class="investTimelinePart">
-                    <div class="timelineBall">
-
-                    </div>
-                    <div class="timelineYear">
-                        2017
-                    </div>
-                    <span class="timelineRow">
-
-                    </span>
-                </div>
-                <div class="investTimelinePart">
-                    <div class="timelineBall">
-
-                    </div>
-                    <div class="timelineYear">
-                        2018
-                    </div>
-                    <span class="timelineRow">
-
-                    </span>
-                </div>
+                @endforeach
             </div>
             <div class="row" style="margin-top: 45px;">
-                <div class="col-md-6">
-                    <h3>Заголовок</h3>
-                    <div class="text">
-                        Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. Таким образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.
+                @foreach($content as $block)
+                    <div class="main_block row" style="display: none;" year="{{$block->year}}">
+                        <div class="col-md-6">
+                            <h3>{{$block->caption1}}</h3>
+                            <div class="text">
+                                {{$block->text1}}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>{{$block->caption2}}</h3>
+                            <div class="text">
+                                {{$block->text2}}
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <h3>Заголовок</h3>
-                    <div class="text">
-                        Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения направлений прогрессивного развития. Таким образом рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.
-                    </div>
-                </div>
+
+                @endforeach
+
             </div>
 
         </div>

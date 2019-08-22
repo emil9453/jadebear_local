@@ -42,8 +42,11 @@ class SpecialOffersController extends Controller
             $query->select([
                 'special_offers.id',
                 'special_offers.photo',
+                'special_offers.photo_name',
                 'special_offers.caption1',
+                'special_offers.text1',
                 'special_offers.caption2',
+                'special_offers.tetxt2',
             ]);
             $table = Datatables::of($query);
 
@@ -61,14 +64,23 @@ class SpecialOffersController extends Controller
             $table->editColumn('photo', function ($row) {
                 if($row->photo) { return '<a href="'. asset(env('UPLOAD_PATH').'/' . $row->photo) .'" target="_blank"><img src="'. asset(env('UPLOAD_PATH').'/thumb/' . $row->photo) .'"/>'; };
             });
+            $table->editColumn('photo_name', function ($row) {
+                return $row->photo_name ? $row->photo_name : '';
+            });
             $table->editColumn('caption1', function ($row) {
                 return $row->caption1 ? $row->caption1 : '';
             });
+            $table->editColumn('text1', function ($row) {
+                return $row->text1 ? $row->text1 : '';
+            });
             $table->editColumn('caption2', function ($row) {
-                if($row->caption2) { return '<a href="'. asset(env('UPLOAD_PATH').'/' . $row->caption2) .'" target="_blank"><img src="'. asset(env('UPLOAD_PATH').'/thumb/' . $row->caption2) .'"/>'; };
+                return $row->caption2 ? $row->caption2 : '';
+            });
+            $table->editColumn('tetxt2', function ($row) {
+                return $row->tetxt2 ? $row->tetxt2 : '';
             });
 
-            $table->rawColumns(['actions','massDelete','photo','caption2']);
+            $table->rawColumns(['actions','massDelete','photo']);
 
             return $table->make(true);
         }

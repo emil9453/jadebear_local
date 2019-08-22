@@ -1,5 +1,5 @@
 @inject('request', 'Illuminate\Http\Request')
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @section('content')
     <h3 class="page-title">@lang('quickadmin.relationship-history.title')</h3>
@@ -35,7 +35,9 @@
 
                         <th>@lang('quickadmin.relationship-history.fields.year')</th>
                         <th>@lang('quickadmin.relationship-history.fields.caption1')</th>
+                        <th>@lang('quickadmin.relationship-history.fields.text1')</th>
                         <th>@lang('quickadmin.relationship-history.fields.caption2')</th>
+                        <th>@lang('quickadmin.relationship-history.fields.text2')</th>
                         @if( request('show_deleted') == 1 )
                         <th>&nbsp;</th>
                         @else
@@ -61,7 +63,9 @@
                 @endif
                 @endcan{data: 'year', name: 'year'},
                 {data: 'caption1', name: 'caption1'},
+                {data: 'text1', name: 'text1'},
                 {data: 'caption2', name: 'caption2'},
+                {data: 'text2', name: 'text2'},
                 
                 {data: 'actions', name: 'actions', searchable: false, sortable: false}
             ];

@@ -58,11 +58,58 @@
                     <span>@lang('quickadmin.team-members.title')</span>
                 </a>
             </li>@endcan
-            
 
-            
 
-            
+            @can('politic_access')
+                <li>
+                    <a href="{{ route('admin.politics.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.politics.title')</span>
+                    </a>
+                </li>@endcan
+
+            @can('medium_access')
+                <li>
+                    <a href="{{ route('admin.media.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.media.title')</span>
+                    </a>
+                </li>@endcan
+
+            @can('relationship_history_access')
+                <li>
+                    <a href="{{ route('admin.relationship_histories.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.relationship-history.title')</span>
+                    </a>
+                </li>@endcan
+
+            @can('special_offer_access')
+                <li>
+                    <a href="{{ route('admin.special_offers.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.special-offers.title')</span>
+                    </a>
+                </li>@endcan
+
+            @can('work_schema_access')
+                <li>
+                    <a href="{{ route('admin.work_schemas.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.work-schema.title')</span>
+                    </a>
+                </li>@endcan
+
+            @can('faq_access')
+                <li>
+                    <a href="{{ route('admin.faqs.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.faq.title')</span>
+                    </a>
+                </li>@endcan
+
+
+++++++++
 
 
 

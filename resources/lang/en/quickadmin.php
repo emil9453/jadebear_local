@@ -54,7 +54,9 @@ return [
         'fields' => [
             'year' => 'Year',
             'caption1' => 'Caption1',
+            'text1' => 'Text1',
             'caption2' => 'Caption2',
+            'text2' => 'Text2',
         ],
     ],
 
@@ -62,10 +64,14 @@ return [
         'title' => 'Special offers',
         'fields' => [
             'photo' => 'Photo',
+            'photo-name' => 'Photo name',
             'caption1' => 'Caption1',
+            'text1' => 'Text1',
             'caption2' => 'Caption2',
+            'tetxt2' => 'Tetxt2',
         ],
     ],
+
 
     'work-schema' => [
         'title' => 'Work schema',
@@ -78,6 +84,23 @@ return [
     'faq' => [
         'title' => 'Faq',
         'fields' => [
+            'caption' => 'Caption',
+            'text' => 'Text',
+        ],
+    ],
+
+    'politics' => [
+        'title' => 'Politics',
+        'fields' => [
+            'caption' => 'Caption',
+            'text' => 'Text',
+        ],
+    ],
+
+    'media' => [
+        'title' => 'Media',
+        'fields' => [
+            'photo' => 'Photo',
             'caption' => 'Caption',
             'text' => 'Text',
         ],

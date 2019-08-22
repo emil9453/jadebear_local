@@ -25,7 +25,6 @@ class StoreSpecialOffersRequest extends FormRequest
         return [
             'photo' => 'mimes:png,jpg,jpeg,gif|required',
             'caption1' => 'required',
-            'caption2' => 'mimes:png,jpg,jpeg,gif|required',
         ];
     }
 }

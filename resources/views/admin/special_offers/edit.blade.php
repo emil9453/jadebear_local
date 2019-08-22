@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin.layouts.app')
 
 @section('content')
     <h3 class="page-title">@lang('quickadmin.special-offers.title')</h3>
@@ -31,6 +31,18 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
+                    {!! Form::label('photo_name', trans('quickadmin.special-offers.fields.photo-name').'', ['class' => 'control-label']) !!}
+                    {!! Form::text('photo_name', old('photo_name'), ['class' => 'form-control', 'placeholder' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('photo_name'))
+                        <p class="help-block">
+                            {{ $errors->first('photo_name') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
                     {!! Form::label('caption1', trans('quickadmin.special-offers.fields.caption1').'*', ['class' => 'control-label']) !!}
                     {!! Form::text('caption1', old('caption1'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
                     <p class="help-block"></p>
@@ -43,18 +55,36 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 form-group">
-                    @if ($special_offer->caption2)
-                        <a href="{{ asset(env('UPLOAD_PATH').'/'.$special_offer->caption2) }}" target="_blank"><img src="{{ asset(env('UPLOAD_PATH').'/thumb/'.$special_offer->caption2) }}"></a>
+                    {!! Form::label('text1', trans('quickadmin.special-offers.fields.text1').'', ['class' => 'control-label']) !!}
+                    {!! Form::textarea('text1', old('text1'), ['class' => 'form-control ', 'placeholder' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('text1'))
+                        <p class="help-block">
+                            {{ $errors->first('text1') }}
+                        </p>
                     @endif
-                    {!! Form::label('caption2', trans('quickadmin.special-offers.fields.caption2').'*', ['class' => 'control-label']) !!}
-                    {!! Form::file('caption2', ['class' => 'form-control', 'style' => 'margin-top: 4px;']) !!}
-                    {!! Form::hidden('caption2_max_size', 2) !!}
-                    {!! Form::hidden('caption2_max_width', 4096) !!}
-                    {!! Form::hidden('caption2_max_height', 4096) !!}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('caption2', trans('quickadmin.special-offers.fields.caption2').'', ['class' => 'control-label']) !!}
+                    {!! Form::text('caption2', old('caption2'), ['class' => 'form-control', 'placeholder' => '']) !!}
                     <p class="help-block"></p>
                     @if($errors->has('caption2'))
                         <p class="help-block">
                             {{ $errors->first('caption2') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('tetxt2', trans('quickadmin.special-offers.fields.tetxt2').'', ['class' => 'control-label']) !!}
+                    {!! Form::textarea('tetxt2', old('tetxt2'), ['class' => 'form-control ', 'placeholder' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('tetxt2'))
+                        <p class="help-block">
+                            {{ $errors->first('tetxt2') }}
                         </p>
                     @endif
                 </div>
