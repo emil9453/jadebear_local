@@ -34,7 +34,14 @@ Route::get('/blog', 'MainController@blog')->name('blog');
 Route::get('/article', 'MainController@article')->name('article');
 
 Route::get('/specialOffer', 'MainController@specialOffer')->name('specialOffer');
+
 Route::get('/relationshipHistory', 'MainController@relationshipHistory')->name('relationshipHistory');
+
+Route::get('/media', 'MainController@media')->name('media');
+
+Route::get('/politics', 'MainController@politics')->name('politics');
+
+Route::get('/faq', 'MainController@faq')->name('faq');
 
 
 // Get page our Teams
@@ -51,6 +58,8 @@ Route::get('/vacancy/semantics', 'AboutController@vacancySemantics')->name('vaca
 Route::get('/vacancy/scheme', 'AboutController@vacancyScheme')->name('vacancyScheme');
 // Get page contactDetails
 Route::get('/contacts', 'AboutController@contacts')->name('contacts');
+
+
 
 
 

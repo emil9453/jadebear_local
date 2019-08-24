@@ -976,3 +976,36 @@ html, body{
 	background: #F8F8F8;
 	margin-right: 10px;
 }
+
+.namingDiv
+{
+	width: 100%;
+	height: 270px;
+	background-color: #dbdbdb;
+	margin-top: 20px;
+	position: relative;
+}
+
+.naming
+{
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+.pageUl
+{
+	list-style-type: none;
+	padding-left: 0;
+}
+.pageList
+{
+	font-size: 16px;
+	font-weight: 400;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.pageList.active
+{
+	color: #2044e1;
+}

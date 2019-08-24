@@ -9,7 +9,7 @@
             <h2 class="text-uppercase" >Инвесторам</h2>
         </div>
         <div class="col-md-6 ">
-            <button class="btn my-btn cap16 float-right">Обратная связь</button>
+            <button class="btn my-btn cap16 float-right">Отправить заявку</button>
         </div>
     <div class="col-md-1"></div>
 </div>

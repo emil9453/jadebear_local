@@ -45,4 +45,16 @@ class MainController extends Controller
     public function article(){
         return view('article');
     }
+    
+    public function media(){
+        return view('media');
+    }
+    
+    public function politics(){
+        return view('politics');
+    }
+    
+    public function faq(){
+        return view('faq');
+    }
 }
