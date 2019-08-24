@@ -40,33 +40,48 @@
   </div>
 </div>
 <div class="row mt-5 mb-5">
-  <div class="col-8 pl-0">
-      <div id="portfolio-first" class="border border-light pl-4">
+  <div class="col-md-8 pl-0">
+    <div class="row">
+      <div id="portfolio-first" class="border border-light pl-4 w-100">
         <h2 class="cap50">GSTAT</h2>
         <p class="cap16">Сервис для ведения статистики горнодобывающих компаний</p>
       </div>
       <a id="portfolio-more-btn" href="">
         <img src="{{ asset('img/more-button-blue.png') }}">
       </a>
-  </div>
-  <div class="col-4">
-      <div class="portfolio-item" style="height: 200px;">
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-6 pl-0">
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
       </div>
+      <div class="col-md-6 pl-0">
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
+        <div class="portfolio-item" style="height: 200px;">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col-4">
+  
+  <div class="col-md-4">
       <div class="portfolio-item" style="height: 300px;">
       </div>
-  </div>
-  <div class="col-4">
-      <div class="portfolio-item" style="height: 400px;">
+      <div class="portfolio-item" style="height: 200px;">
       </div>
-  </div>
-  <div class="col-4">
-      <div class="portfolio-item" style="height: 250px;">
+      <div class="portfolio-item" style="height: 200px;">
       </div>
-  </div>
-  <div class="col-4">
-      <div class="portfolio-item" style="height: 270px;">
+      <div class="portfolio-item" style="height: 200px;">
       </div>
   </div>
 </div>

@@ -25,7 +25,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -72,7 +72,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -81,7 +81,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -101,7 +101,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                     <a class="btn my-btn-yellow cap14">Раздел#</a>
                 </div>
                 <div class="title pt-4 pb-5">
-                    <a class="cap30 font-weight-bold">Заголовок статьи</a>
+                    <a href="{{route('article')}}" class="cap30 font-weight-bold">Заголовок статьи</a>
                     <p class="cap16 mt-2">Превью статьи в две строки</p>
                 </div>
             </div>

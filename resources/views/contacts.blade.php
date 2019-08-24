@@ -38,13 +38,13 @@
 
 <div id="contacts-container" class="container-fluid my-padding mb-5 mt-5">
   <div class="row">
-    <div class="col-4 pl-0">
+    <div class="col-md-4 pl-0">
       <p class="cap16 mb-3">Телефон</p>
       <span class="cap30">+7 (495) 332 12 42</span>
       <p class="cap16 mb-3 mt-4">Email</p>
       <span class="cap30">jadebear@info.com</span>
     </div>
-    <div class="col-8">
+    <div class="col-md-8">
       <p class="cap16 mb-3">Реквизиты</p>
       <b>
         ООО «Jade Bear ltd»<br>

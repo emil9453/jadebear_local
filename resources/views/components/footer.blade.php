@@ -1,10 +1,10 @@
 <div class="mypadding footer pt-5">
     <div class="row">
-        <div class="col-4">
+        <div class="col-md-4">
             <p class="number cap30">+7 (495) 332 12 42</p>
             <span class="address cap16">Москва, Кутузовский пр-т, 42</span>
         </div>
-        <div class="col-8">
+        <div class="col-md-8">
             <div class="social">
                 <a href=""><img src="{{ asset('img/social black/vk.png') }}"></img></a>
                 <a href=""><img src="{{ asset('img/social black/facebook.png') }}"></img></a>
@@ -17,10 +17,10 @@
         </div>
     </div>
     <div class="row pt-5">
-        <div class="col-3">
+        <div class="col-md-3">
             <button class="btn my-btn cap16">Обратная связь</button>
         </div>
-        <div class="col-9">
+        <div class="col-md-9">
             <p class="float-right">
                 <a href="">Условия сайта </a>
                 <a href="">Техническая поддержка</a>
@@ -34,10 +34,10 @@
         </div>
     </div>
     <div class="row pt-5 copyright">
-        <div class="col-3">
+        <div class="col-md-3">
             <span>Jade Bear LTD ©, 2016-2018</span>
         </div>
-        <div class="col-9">
+        <div class="col-md-9">
             <span class="float-right ml-4">JADE RAVEN</span>
             <span class="float-right ml-4">JADE RABBIT</span>
         </div>

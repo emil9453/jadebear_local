@@ -19,10 +19,10 @@
                 <a class="nav-link" href="{{ route('about') }}">О нас </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('ourTeam') }}">Наша команда </a>
+                <a class="nav-link" href="{{ route('our_team') }}">Наша команда </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('ourHistory') }}">Наша история</a>
+                <a class="nav-link" href="{{ route('our_history') }}">Наша история</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#">Вакансия <span class="sr-only">(current)</span></a>
@@ -67,24 +67,24 @@
     </div>
     <div class="col-1"></div>
 </div>
-<div class="row pt-5">
-    <div class="col-1"></div>
-    <div class="col-3 p-0">
+<div class="row pt-5 left-padding">
+    <div class="col-md-1"></div>
+    <div class="col-md-3 p-0">
       <div class="nav-left-vacancy p-0">
         <ul class="pl-0">
-          <li class="pb-3"><a class="active" href="">Условия</a></li>
-          <li class="pb-3"><a href="{{ route('vacancyCareer') }}">Карьерный рост</a></li>
-          <li class="pb-3"><a href="{{ route('vacancySemantics') }}">Семантика действий</a></li>
-          <li class="pb-3"><a href="{{ route('vacancyScheme') }}">Схема работы</a></li>
+          <li class="pb-3"><a class="active" href="{{ route('vacancy') }}">Условия</a></li>
+          <li class="pb-3"><a href="{{ route('vacancy_career') }}">Карьерный рост</a></li>
+          <li class="pb-3"><a href="{{ route('vacancy_semantics') }}">Семантика действий</a></li>
+          <li class="pb-3"><a href="{{ route('vacancy_scheme') }}">Схема работы</a></li>
         </ul>
       </div>
     </div>
-    <div class="col-7">
+    <div class="col-md-7">
         <div class="row">
             <h2 class="text-uppercase cap30 mb-5">Вакансия UX дизайнера</h2>
         </div>
         <div class="row mb-5">
-            <div class="col-6 pb-5 pl-0">
+            <div class="col-md-6 pb-5 pl-0">
               <p class="cap20">Требования к кандидату</p>
               <p class="cap16">
                 — владение основами типографики;<br>
@@ -100,7 +100,7 @@
               <br><br>
               <button id="btn-vacancy-responce" class="btn my-btn cap16 pl-5 pr-5 pt-3 pb-3">Оставить отклик на вакансию</button>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
               <p class="cap20">Плюсом будет</p>
               <p class="cap16">
                 — понимание основ Google Material Design;<br>
@@ -116,7 +116,7 @@
             </div>
         </div>
       </div>
-    <div class="col-1"></div>
+    <div class="col-md-1"></div>
 </div>
 <div class="container-fluid my-padding mb-5">
   <div class="row">
@@ -128,17 +128,67 @@
     </div>
   </div>
 </div>
-<nav id="vacancy-nav">
-  <div class="content">
+<nav id="vacancy-nav" class="popup-right">
+  <div class="container content pl-4">
     <div class="row">
-      <div class="col-3">
-        <span class="close">
+      <div class="col-2">
+        <span class="popup-close">
+
         </span>
       </div>
-      <div class="col-9">
-        <h2>ВАКАНСИЯ UX ДИЗАЙНЕРА</h2>
+      <div class="col-10">
+        <h2 class="cap40 text-uppercase">ВАКАНСИЯ UX ДИЗАЙНЕРА</h2>
       </div>
     </div>
+    <form>
+      <div class="row mt-4">
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Ваше имя</label>
+            <input type="text" class="form-control rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="exampleInputEmail1">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Ваш номер для связи</label>
+            <input type="text" class="form-control  rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="exampleInputEmail1" placeholder="+7 ">
+          </div>
+      </div>
+      <div class="row">
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Ссылка на ваше портфолио</label>
+            <input type="email" class="form-control  rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="exampleInputEmail1">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputEmail1">Ваш email</label>
+            <input type="email" class="form-control  rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="exampleInputEmail1">
+          </div>
+      </div>
+      <div class="row mt-2">
+          <div class="form-group col-12">
+            <label for="textarea1">Сопроводительное письмо</label>
+            <textarea class="form-control  rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="textarea1" placeholder="Введите текст " rows="3"></textarea>
+          </div>
+      </div>
+      <div class="row mt-5">
+          <div class="form-group col-12">
+            <h3 class="cap30">Тестовое задание</h3>
+            <label for="textarea2">Описание или ссылка на работу</label>
+            <textarea class="form-control  rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="textarea2" placeholder="Введите текст " rows="3"></textarea>
+          </div>
+          <div class="form-group col-12">
+            <input type="file" class="form-control-file">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-6">
+            <button class="btn my-btn cap16 w-100 pt-3 pb-3">Отправить резюме</button>
+          </div>
+          <div class="col-6">
+            <p class="cap14">Нажимая на кнопку, вы даете <a href="">согласие</a> 
+            на обработку персональных данных 
+            и соглашаетесь с политикой 
+            конфиденциальности.</p>
+          </div>
+      </div>
+    </form>
     
   </div>
 </nav>

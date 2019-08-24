@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Партнерам')
+@section('title', 'Представительства')
 @section('background', 'white-back')
 @section('menu-type', 'black')
 @section('content')
@@ -16,31 +16,64 @@
         <div class="col-md-3 pl-0">
             <div class="nav-left-vacancy p-0">
                 <ul class="pl-0">
-                  <li class="pb-3"><a class="active" href="{{ route('partners') }}">Развитие</a></li>
+                  <li class="pb-3"><a href="{{ route('partners') }}">Развитие</a></li>
                   <li class="pb-3"><a href="{{ route('partners_perspective') }}">Перспективный рост</a></li>
                   <li class="pb-3"><a href="{{ route('partners_why') }}">Почему именно вы?</a></li>
                   <li class="pb-3"><a href="{{ route('partners_scheme') }}">Схема работы</a></li>
                   <li class="pb-3"><a href="{{ route('partners_relationship') }}">История взаимоотношений</a></li>
                   <li class="pb-3"><a href="{{ route('partners_investment') }}">Инвестирование</a></li>
-                  <li class="pb-3"><a href="{{ route('partners_offices') }}">Представительства</a></li>
+                  <li class="pb-3"><a class="active" href="{{ route('partners_offices') }}">Представительства</a></li>
                   <li class="pb-3"><a href="{{ route('partners_thanks') }}">Благодарственные письма</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-md-9 pl-4">
             <div class="row">
-                <h2 class="text-uppercase cap30 mb-5">Развитие</h2>
+                <h2 class="text-uppercase cap30 mb-5">Представительства</h2>
             </div>
-            <div class="row">
-                <div class="col-md-6 pl-0">
-                    <p class="cap20">Заголовок</p>
-                    <p class="cap16">Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации новых предложений. Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.</p>
-                    <p class="cap20">Заголовок</p>
-                    <p class="cap16">Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации новых предложений. Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+            <div class="row mt-4">
+                <div class="col-md-12 pl-0 offices">
+                  <img src="{{ asset('img/contacts_map.png') }}">
+                  <div class="row mt-3">
+                    <div class="col-md-6">
+                      <p class="cap16">Телефон</p>
+                      <span class="cap20">+7 (495) 332 12 42</span>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="cap16">Адрес</p>
+                      <span class="cap20">Москва, Кутузовский пр-т, 42</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-6">
-                    <p class="cap20">Заголовок</p>
-                    <p class="cap16">Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации новых предложений. Не следует, однако забывать, что реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям.</p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 pl-0 offices">
+                  <img src="{{ asset('img/contacts_map.png') }}">
+                  <div class="row mt-3">
+                    <div class="col-md-6">
+                      <p class="cap16">Телефон</p>
+                      <span class="cap20">+7 (495) 332 12 42</span>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="cap16">Адрес</p>
+                      <span class="cap20">Москва, Кутузовский пр-т, 42</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 pl-0 offices">
+                  <img src="{{ asset('img/contacts_map.png') }}">
+                  <div class="row mt-3">
+                    <div class="col-md-6">
+                      <p class="cap16">Телефон</p>
+                      <span class="cap20">+7 (495) 332 12 42</span>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="cap16">Адрес</p>
+                      <span class="cap20">Москва, Кутузовский пр-т, 42</span>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>

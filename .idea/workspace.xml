@@ -1,22 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bef2eef7-c55a-4172-954e-9a950893a05b" name="Default Changelist" comment="Merge branch 'dev_emil' of https://github.com/daryn-nazarbek/jadebear into dev_emil&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/service.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/mgu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/faq.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/media.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/politics.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="bef2eef7-c55a-4172-954e-9a950893a05b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/brend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/development.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/reviews.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/show.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/webdev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac/window.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/mac03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/partner-logo-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/partner-logo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/partner-logo-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/partner-logo-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/partner-logo-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/partner-logo-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/portfolio-welcome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/review-welcome-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/review-welcome-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/review-welcome-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/thanks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/time_horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/our_team.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partners/investment.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partners/offices.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partners/perspective.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partners/relationship.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partners/scheme.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partners/thanks.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partners/why.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/service.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/investment.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/investment.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/relationshipHistory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/relationshipHistory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contacts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contacts.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ourHistory.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ourHistory.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partners/partners.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partners/partners.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/portfolio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vacancy/career.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vacancy/career.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vacancy/scheme.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vacancy/scheme.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vacancy/semantic.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vacancy/semantic.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/vacancy/vacancy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vacancy/vacancy.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="33" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="33" />
+            <state relative-caret-position="600">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -63,8 +97,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/relationshipHistory.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            <state relative-caret-position="195">
+              <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -81,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+            <state relative-caret-position="315">
+              <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -106,6 +140,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/our_team.blade.php" />
       </list>
     </option>
   </component>
@@ -225,7 +260,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +282,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,6 +329,7 @@
       <workItem from="1565762332173" duration="4153000" />
       <workItem from="1565854040617" duration="255000" />
       <workItem from="1565969083665" duration="922000" />
+      <workItem from="1566636949645" duration="258000" />
     </task>
     <task id="LOCAL-00001" summary="composer.lock">
       <created>1565854245946</created>
@@ -309,16 +345,24 @@
       <option name="project" value="LOCAL" />
       <updated>1565854273034</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'dev_emil' of https://github.com/daryn-nazarbek/jadebear into dev_emil&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml">
+      <created>1566637024383</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566637024383</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5959000" />
+    <option name="totallyTimeSpent" value="6217000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="727" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="723" extended-state="2" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25833333" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2621212" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -330,10 +374,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.45757577" side_tool="true" weight="0.26554623" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.54242426" visible="true" weight="0.3092437" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.54242426" weight="0.26903552" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -344,9 +388,12 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="composer.lock" />
     <MESSAGE value="idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+    <MESSAGE value="Merge branch 'dev_emil' of https://github.com/daryn-nazarbek/jadebear into dev_emil&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'dev_emil' of https://github.com/daryn-nazarbek/jadebear into dev_emil&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bootstrap/cache/services.php">
@@ -382,8 +429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MainController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="600">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -403,15 +450,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" column="32" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
+        <state relative-caret-position="315">
+          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/relationshipHistory.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        <state relative-caret-position="195">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
         </state>
       </provider>
     </entry>
