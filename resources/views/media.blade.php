@@ -29,66 +29,19 @@
         <div class="col-md-7 articlesContainer" >
             <h3 class="text-uppercase" >СМИ о нас</h3>
             <div class="articles ">
-                <div class="article col-md-4">
-                    <div class="article-inner">
-                        <div data-img style='background-image: url("{{ asset('img/mgu.jpg') }}")' ></div>
-                        <h3> Название статьи </h3>
-                        <div class="article_body">
-                            Таким образом постоянно информационные технологии обеспечиваются нашим...
+
+                @foreach($content as $block)
+                    <div class="article col-md-4">
+                        <div class="article-inner">
+                            <div data-img style='background-image: url("{{ asset(''.$block->photo.'') }}")' ></div>
+                            <h3> {{$block->caption}} </h3>
+                            <div class="article_body">
+                                {{\Illuminate\Support\Str::limit($block->text,70)  }}
+                            </div>
+                            <a href="#">Перейти к статье</a>
                         </div>
-                        <a href="#">Перейти к статье</a>
                     </div>
-                </div>
-                <div class="article col-md-4">
-                    <div class="article-inner">
-                        <div data-img style='background-image: url("{{ asset('img/mgu.jpg') }}")' ></div>
-                        <h3> Название статьи </h3>
-                        <div class="article_body">
-                            Таким образом постоянно информационные технологии обеспечиваются нашим...
-                        </div>
-                        <a href="#">Перейти к статье</a>
-                    </div>
-                </div>
-                <div class="article col-md-4">
-                    <div class="article-inner">
-                        <div data-img style='background-image: url("{{ asset('img/mgu.jpg') }}")' ></div>
-                        <h3> Название статьи </h3>
-                        <div class="article_body">
-                            Таким образом постоянно информационные технологии обеспечиваются нашим...
-                        </div>
-                        <a href="#">Перейти к статье</a>
-                    </div>
-                </div>
-                <div class="article col-md-4">
-                    <div class="article-inner">
-                        <div data-img style='background-image: url("{{ asset('img/mgu.jpg') }}")' ></div>
-                        <h3> Название статьи </h3>
-                        <div class="article_body">
-                            Таким образом постоянно информационные технологии обеспечиваются нашим...
-                        </div>
-                        <a href="#">Перейти к статье</a>
-                    </div>
-                </div>
-                <div class="article col-md-4">
-                    <div class="article-inner">
-                        <div data-img style='background-image: url("{{ asset('img/mgu.jpg') }}")' ></div>
-                        <h3> Название статьи </h3>
-                        <div class="article_body">
-                            Таким образом постоянно информационные технологии обеспечиваются нашим...
-                        </div>
-                        <a href="#">Перейти к статье</a>
-                    </div>
-                </div>
-                <div class="article col-md-4">
-                    <div class="article-inner">
-                        <div data-img style='background-image: url("{{ asset('img/mgu.jpg') }}")' ></div>
-                        <h3> Название статьи </h3>
-                        <div class="article_body">
-                            Таким образом постоянно информационные технологии обеспечиваются нашим...
-                        </div>
-                        <a href="#">Перейти к статье</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 

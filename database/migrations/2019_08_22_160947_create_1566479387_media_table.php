@@ -17,7 +17,7 @@ class Create1566479387MediaTable extends Migration
                 $table->increments('id');
                 $table->string('photo')->nullable();
                 $table->string('caption')->nullable();
-                $table->string('text')->nullable();
+                $table->text('text')->nullable();
                 
                 $table->timestamps();
                 $table->softDeletes();

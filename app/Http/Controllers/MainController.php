@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Faq;
+use App\Medium;
+use App\Politic;
 use App\RelationshipHistory;
 use App\SpecialOffer;
 use App\WorkSchema;
@@ -55,14 +58,17 @@ class MainController extends Controller
     }
     
     public function media(){
-        return view('media');
+        $content = Medium::all();
+        return view('media',compact('content'));
     }
     
     public function politics(){
-        return view('politics');
+        $content = Politic::all();
+        return view('politics',compact('content'));
     }
     
     public function faq(){
-        return view('faq');
+        $content = Faq::all();
+        return view('faq',compact('content'));
     }
 }
