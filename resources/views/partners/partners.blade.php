@@ -12,23 +12,18 @@
             <button class="btn my-btn w-100 pt-2 pb-2 cap16">Отправить заявку</button>
         </div>
     </div>
-    <div class="row ml-0 mr-0">
-        <div class="col-md-12 p-0 mt-5">
-            <div class="banner"></div>
-        </div>
-    </div>
     <div class="row ml-0 mr-0 mt-5">
         <div class="col-md-3 pl-0">
             <div class="nav-left-vacancy p-0">
                 <ul class="pl-0">
-                  <li class="pb-3"><a class="active" href="">Развитие</a></li>
-                  <li class="pb-3"><a href="vacancy/career">Перспективный рост</a></li>
-                  <li class="pb-3"><a href="vacancy/semantics">Почему именно вы?</a></li>
-                  <li class="pb-3"><a href="vacancy/scheme">Схема работы</a></li>
-                  <li class="pb-3"><a href="vacancy/scheme">История взаимоотношений</a></li>
-                  <li class="pb-3"><a href="vacancy/scheme">Инвестирование</a></li>
-                  <li class="pb-3"><a href="vacancy/scheme">Представительства</a></li>
-                  <li class="pb-3"><a href="vacancy/scheme">Благодарственные письма</a></li>
+                    <li class="pb-3"><a class="active" href="{{ route('partners') }}">Развитие</a></li>
+                    <li class="pb-3"><a href="{{ route('partners_perspective') }}">Перспективный рост</a></li>
+                    <li class="pb-3"><a href="{{ route('partners_why') }}">Почему именно вы?</a></li>
+                    <li class="pb-3"><a href="{{ route('partners_scheme') }}">Схема работы</a></li>
+                    <li class="pb-3"><a href="{{ route('partners_relationship') }}">История взаимоотношений</a></li>
+                    <li class="pb-3"><a href="{{ route('partners_investment') }}">Инвестирование</a></li>
+                    <li class="pb-3"><a href="{{ route('partners_offices') }}">Представительства</a></li>
+                    <li class="pb-3"><a href="{{ route('partners_thanks') }}">Благодарственные письма</a></li>
                 </ul>
             </div>
         </div>
@@ -36,20 +31,65 @@
             <div class="row">
                 <h2 class="text-uppercase cap30 mb-5">Развитие</h2>
             </div>
-            <div class="row">
-                @foreach($content as $key=> $block)
-                    @if($key%2==0)
+            @foreach($content as $key=> $block)
+                @if($key%2==0)
+                    <div class="row">
+                        @endif
                         <div class="col-6 pl-0">
-                    @endif
                             <p class="cap20">{{$block->caption}}</p>
                             <p class="cap16">{{$block->text}}</p>
-                    @if($key%2!=0)
                         </div>
-                    @endif
-                @endforeach
-            </div>
+                        @if($key%2!=0)
+                    </div>
+                @endif
+            @endforeach
         </div>
     </div>
 </div>
+<nav id="vacancy-nav" class="popup-right">
+    <div class="container content pl-4">
+        <div class="row">
+            <div class="col-2">
+        <span class="popup-close">
+
+        </span>
+            </div>
+            <div class="col-10">
+                <h2 class="cap40 text-uppercase">Обратная связь</h2>
+            </div>
+        </div>
+        <form>
+            <div class="row mt-5">
+                <div class="form-group col-6">
+                    <label for="exampleInputEmail1">Ваше имя</label>
+                    <input type="text" class="form-control rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="exampleInputEmail1">
+                </div>
+                <div class="form-group col-6">
+                    <label for="exampleInputEmail1">Ваш номер для связи</label>
+                    <input type="text" class="form-control  rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="exampleInputEmail1" placeholder="+7 ">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="form-group col-12">
+                    <label for="textarea1">Сообщение</label>
+                    <textarea class="form-control  rounded-0 border-top-0 border-left-0 border-right-0 border-bottom" id="textarea1" placeholder="Введите текст " rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <button class="btn my-btn cap16 w-100 pt-3 pb-3">Отправить резюме</button>
+                </div>
+                <div class="col-6">
+                    <p class="cap14">Нажимая на кнопку, вы даете <a href="">согласие</a>
+                        на обработку персональных данных
+                        и соглашаетесь с политикой
+                        конфиденциальности.</p>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</nav>
+<div class="vacancy-overlay"></div>
 @include('components.footer')
 @endsection

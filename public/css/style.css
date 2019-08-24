@@ -55,6 +55,9 @@ html, body{
 .cap50{
 	font-size: 50px;
 }
+.cap40{
+	font-size: 40px;
+}
 .cap30{
 	font-size: 30px;
 }
@@ -1008,4 +1011,396 @@ html, body{
 .pageList.active
 {
 	color: #2044e1;
+}
+
+
+.popup-right .form-control label{
+	font-size: 18px;
+	color: black;
+}
+.form-control-file{
+	color: transparent;
+}
+.form-control-file::-webkit-file-upload-button {
+	visibility: hidden;
+}
+.form-control-file::before {
+	content: 'Прикрепить файлы';
+	display: inline-block;
+	padding: 5px 8px;
+	outline: none;
+	white-space: nowrap;
+	-webkit-user-select: none;
+	color: #2044E1;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+/*  Overlay */
+.vacancy-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background: black;
+	opacity: 0;
+	visibility: hidden;
+}
+.vacancy-overlay.show {
+	opacity: 0.3;
+	visibility: visible;
+}
+
+
+
+/* Welcome page */
+#myProgress {
+	width: 100%;
+}
+
+#myBar {
+	width: 0%;
+	height: 2px;
+	background-color: #2044E1;
+}
+#screen{
+	position: absolute;
+	left: 7%;
+	top: 1%;
+	width: 76%;
+	height: 265px;
+	background: white;
+	opacity: 0.95;
+}
+#screen .page{
+	width: 100%;
+}
+#page2, #page3, #page4, #page4-2, #page4-3, #page5, #page6, #page7, #page8{
+	display: none;
+}
+#screen #page1 {
+	padding: 25% 20% 30px 20%;
+}
+#screen #page1 p{
+	text-align: center;
+}
+#screen #page2{
+	display: none;
+	padding: 26% 29% 30px 29%;
+}
+
+#screen #page2 .btn{
+	background: #FFDC2E;
+}
+#screen #page3 .ill-logo{
+	padding: 115px 30% 28% 32%;
+}
+#screen .w-100{
+	padding:10%;
+}
+#screen .w-100 img{
+	width: 100%;
+}
+#screen .window{
+	width: 100%;
+	height: 250px;
+	background-image: url(../img/mac/window.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#page4 .design{
+	width: 100%;
+	height: 250px;
+	padding: 36px 36px 30px 36px;
+	background-image: url(../img/mac/window.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#page4-2 .design{
+	width: 100%;
+	height: 250px;
+	padding: 36px 36px 40px 36px;
+	background-image: url(../img/mac/window.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#page4-3 .design{
+	width: 100%;
+	height: 250px;
+	padding: 36px 36px 40px 36px;
+	background-image: url(../img/mac/window.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#page4-2 .design img{
+	height: 205px;
+}
+#page4-3 .design img{
+	height: 205px;
+}
+#page5 .window{
+	padding: 85px 30% 10% 37%;
+}
+#page5 .window img{
+	width: 70%;
+}
+#page6 .window{
+	padding: 85px 25% 10% 18%;
+}
+#page6 .window img{
+	width: 70%;
+}
+#page7 .window{
+	padding: 90px 25% 10% 18%;
+}
+#page7 .window img{
+	width: 70%;
+}
+#page8 .window{
+	padding: 90px 10% 10% 17%;
+}
+#page8 .window img{
+	width: 70%;
+}
+
+
+
+#left-page1{
+	display: none;
+}
+.nav-btn.main{
+	position: fixed;
+	bottom: 0;
+}
+.left-page{
+
+}
+.left-page h2, .left-page h3, .left-page p{
+	color: white;
+}
+#left-page2{
+	position: absolute;
+	top: 150%;
+	display: none;
+}
+#left-page2 h3{
+	font-size: 30px;
+}
+#left-page2 h3 span{
+	color: #FFDC2E;
+	font-size: 70px;
+}
+#left-page2-2 h3{
+	font-size: 30px;
+}
+#left-page2-2 h3 span{
+	color: #FFDC2E;
+	font-size: 70px;
+}
+#left-page2-3 h3{
+	font-size: 30px;
+}
+#left-page2-3 h3 span{
+	color: #FFDC2E;
+	font-size: 70px;
+}
+#left-page3{
+	position: absolute;
+	top: 150%;
+	display: none;
+}
+#left-page4{
+	position: absolute;
+	top: 150%;
+	display: none;
+}
+#left-page4 h3{
+	font-size: 30px;
+}
+#left-page4 h3 span{
+	color: #FFDC2E;
+	font-size: 150px;
+}
+#left-page4 img{
+	width: 100%;
+}
+#left-page5{
+	position: absolute;
+	top: 150%;
+	display: none;
+}
+#left-page5 b{
+	color: white;
+}
+#left-page5 h3{
+	font-size: 30px;
+}
+#left-page5 b{
+	line-height: 35px;
+}
+#left-page5 .col-11 p{
+	line-height: 15px;
+	font-weight: bold;
+}
+#left-page5 h3 span{
+	color: #FFDC2E;
+	font-size: 150px;
+}
+#left-page5 .review img{
+	width: 40%;
+}
+#left-page5 .review img:hover{
+	cursor: pointer;
+}
+#left-page5 .review #review1{
+	position: absolute;
+	left: 2%;
+}
+#left-page5 .review #review2{
+	position: absolute;
+	left: 46%;
+	bottom: -30%;
+}
+#left-page5 .review #review3{
+	position: absolute;
+	left: 90%;
+	bottom: -30%;
+}
+
+#left-page6{
+	position: absolute;
+	top: 150%;
+	display: none;
+}
+#left-page6 h3{
+	font-size: 30px;
+}
+#left-page6 h3 span{
+	color: #FFDC2E;
+	font-size: 150px;
+}
+#left-page6 b{
+	position: fixed;
+	bottom: 3%;
+	left: 3%;
+	color: white;
+}
+#left-page6 a{
+	position: fixed;
+	bottom: 3%;
+	right: 3%;
+	color: white;
+}
+#left-page6 a:hover{
+	cursor: pointer;
+}
+#left-page2-2{
+	position: absolute;
+	left: -150%;
+	display: none;
+}
+#left-page2-3{
+	position: absolute;
+	left: -150%;
+	display: none;
+}
+.chart img{
+	width: 100%;
+	margin-left: -15px;
+}
+.scheme-div{
+	width: 100%;
+	padding-left: 6.5%;
+}
+.scheme-div.image01{
+	background-image: url(../img/01.png);
+	background-repeat: no-repeat;
+	background-position: 0% -15px;
+}
+.scheme-div.image02{
+	background-image: url(../img/02.png);
+	background-repeat: no-repeat;
+	background-position: 0% -15px;
+}
+.scheme-div.image03{
+	background-image: url(../img/03.png);
+	background-repeat: no-repeat;
+	background-position: 0% -15px;
+}
+.offices img{
+	width: 100%;
+}
+.thanks img{
+	width: 100%;
+	height: 90%;
+}
+.thanks{
+	margin-top: 4%;
+}
+.thanks .hover{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 90%;
+	margin-left: 5%;
+	background: black;
+	opacity: 0.6;
+}
+.thanks .btn{
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: 29%;
+	opacity: 1;
+}
+.thanks.active .hover{
+	display: block;
+}
+.thanks.active .btn{
+	display: block;
+}
+@media (max-width: 667px) {
+	#nav {
+		padding: 29px 30px 70px 20px;
+		max-width: 100%;
+	}
+	.lang-div{
+		position: absolute;
+		right: -77%;
+	}
+	.back-picture.pic01 {
+		background-position: 0% -70px;
+	}
+	.back-picture.pic02 {
+		background-position: 0% -70px;
+	}
+	.back-picture.pic03 {
+		background-position: 0% -70px;
+	}
+	.page-title {
+		padding-left: 30px;
+	}
+	.collapse:not(.show) {
+		display: block;
+	}
+	.navbar-toggler{
+		display: none;
+	}
+	#mac-img-members {
+		background-position: 27px 30px;
+	}
+	.left-padding{
+		padding-left: 10%;
+	}
+	#contract-example-link {
+		bottom: -5%;
+	}
 }

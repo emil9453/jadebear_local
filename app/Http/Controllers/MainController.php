@@ -9,6 +9,7 @@ use App\Politic;
 use App\RelationshipHistory;
 use App\Review;
 use App\SpecialOffer;
+use App\WhyExactlyWe;
 use App\WorkSchema;
 use Illuminate\Http\Request;
 
@@ -85,7 +86,8 @@ class MainController extends Controller
     }
     public function partners_why()
     {
-        return view('partners.why');
+        $content = WhyExactlyWe::all();
+        return view('partners.why',compact('content'));
     }
     public function partners_scheme()
     {
