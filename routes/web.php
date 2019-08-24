@@ -26,6 +26,13 @@ Route::get('/reviews', 'MainController@reviews')->name('reviews');
 Route::get('/services', 'MainController@services')->name('services');
 // Get page toPartners
 Route::get('/partners', 'MainController@partners')->name('partners');
+Route::get('/partners/perspective', 'MainController@partners_perspective')->name('partners_perspective');
+Route::get('/partners/why', 'MainController@partners_why')->name('partners_why');
+Route::get('/partners/scheme', 'MainController@partners_scheme')->name('partners_scheme');
+Route::get('/partners/relationship', 'MainController@partners_relationship')->name('partners_relationship');
+Route::get('/partners/investment', 'MainController@partners_investment')->name('partners_investment');
+Route::get('/partners/offices', 'MainController@partners_offices')->name('partners_offices');
+Route::get('/partners/thanks', 'MainController@partners_thanks')->name('partners_thanks');
 // Get page toInvestors
 Route::get('/toInvestors', 'MainController@toInvestors')->name('toInvestors');
 // Get page blog
@@ -82,6 +89,8 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.password.reset');
 
+
+
 Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function ()
 {
     Route::get('/home', 'HomeController@index');
@@ -119,5 +128,17 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
     Route::post('faqs_mass_destroy', ['uses' => 'Admin\FaqsController@massDestroy', 'as' => 'faqs.mass_destroy']);
     Route::post('faqs_restore/{id}', ['uses' => 'Admin\FaqsController@restore', 'as' => 'faqs.restore']);
     Route::delete('faqs_perma_del/{id}', ['uses' => 'Admin\FaqsController@perma_del', 'as' => 'faqs.perma_del']);
+    Route::resource('reviews', 'Admin\ReviewsController');
+    Route::post('reviews_mass_destroy', ['uses' => 'Admin\ReviewsController@massDestroy', 'as' => 'reviews.mass_destroy']);
+    Route::post('reviews_restore/{id}', ['uses' => 'Admin\ReviewsController@restore', 'as' => 'reviews.restore']);
+    Route::delete('reviews_perma_del/{id}', ['uses' => 'Admin\ReviewsController@perma_del', 'as' => 'reviews.perma_del']);
+    Route::resource('developments', 'Admin\DevelopmentsController');
+    Route::post('developments_mass_destroy', ['uses' => 'Admin\DevelopmentsController@massDestroy', 'as' => 'developments.mass_destroy']);
+    Route::post('developments_restore/{id}', ['uses' => 'Admin\DevelopmentsController@restore', 'as' => 'developments.restore']);
+    Route::delete('developments_perma_del/{id}', ['uses' => 'Admin\DevelopmentsController@perma_del', 'as' => 'developments.perma_del']);
+    Route::resource('why_exactly_wes', 'Admin\WhyExactlyWesController');
+    Route::post('why_exactly_wes_mass_destroy', ['uses' => 'Admin\WhyExactlyWesController@massDestroy', 'as' => 'why_exactly_wes.mass_destroy']);
+    Route::post('why_exactly_wes_restore/{id}', ['uses' => 'Admin\WhyExactlyWesController@restore', 'as' => 'why_exactly_wes.restore']);
+    Route::delete('why_exactly_wes_perma_del/{id}', ['uses' => 'Admin\WhyExactlyWesController@perma_del', 'as' => 'why_exactly_wes.perma_del']);
 
 });

@@ -106,6 +106,39 @@ return [
         ],
     ],
 
+
+    'reviews' => [
+        'title' => 'Reviews',
+        'fields' => [
+            'text' => 'Text',
+            'photo' => 'Photo',
+            'name' => 'Name',
+            'company' => 'Company',
+        ],
+    ],
+
+    'partners-development' => [
+        'title' => 'Partners development',
+        'fields' => [
+        ],
+    ],
+
+    'development' => [
+        'title' => 'Development',
+        'fields' => [
+            'caption' => 'Caption',
+            'text' => 'Text',
+        ],
+    ],
+
+    'why-exactly-we' => [
+        'title' => 'Why exactly we',
+        'fields' => [
+            'caption' => 'Caption',
+            'text' => 'Text',
+        ],
+    ],
+
     'qa_create' => 'Create',
     'qa_save' => 'Save',
     'qa_edit' => 'Edit',

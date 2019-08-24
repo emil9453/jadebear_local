@@ -109,7 +109,30 @@
                 </li>@endcan
 
 
-++++++++
+            @can('review_access')
+                <li>
+                    <a href="{{ route('admin.reviews.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.reviews.title')</span>
+                    </a>
+                </li>@endcan
+
+            @can('development_access')
+                <li>
+                    <a href="{{ route('admin.developments.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.development.title')</span>
+                    </a>
+                </li>@endcan
+
+            @can('why_exactly_we_access')
+                <li>
+                    <a href="{{ route('admin.why_exactly_wes.index') }}">
+                        <i class="fa fa-gears"></i>
+                        <span>@lang('quickadmin.why-exactly-we.title')</span>
+                    </a>
+                </li>@endcan
+
 
 
 
